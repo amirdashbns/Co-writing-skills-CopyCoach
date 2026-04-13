@@ -806,6 +806,25 @@ CAPTION:
 
 ---
 
+## Slide Image Delivery
+
+When generating carousel slide images, ALWAYS follow these steps at the end:
+
+1. **Generate slides** as PNG files at 1080×1350px
+2. **Save to** `/knowledge/drafts/ig-carousel-{short-topic-slug}/`
+3. **Commit and push** the images to the current branch
+4. **Provide direct download links** for every slide using this raw GitHub URL format:
+
+```
+https://raw.githubusercontent.com/{owner}/{repo}/{branch}/knowledge/drafts/ig-carousel-{slug}/slide_XX.png
+```
+
+5. **List every link** in a numbered list so the user can click and save without navigating GitHub
+
+This is the FINAL step of every carousel delivery. Do not skip it. Do not wait for the user to ask.
+
+---
+
 ## Post-Creation Checklist
 
 Before delivering the carousel, verify:
@@ -822,3 +841,4 @@ Before delivering the carousel, verify:
 - [ ] Body text is 3 lines max per slide
 - [ ] No walls of text on any slide
 - [ ] Not overly promotional (unless using a Sell formula intentionally)
+- [ ] Direct download links provided for all slide images
