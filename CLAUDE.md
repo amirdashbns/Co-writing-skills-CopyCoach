@@ -33,6 +33,7 @@ This writing system has three core components:
 │  │ icp          │  │ twitter-     │  │ notes/       │       │
 │  │ business-    │  │   thread     │  │ archive/     │       │
 │  │   profile    │  │ substack-note│  │              │       │
+│  │              │  │ ig-carousel  │  │              │       │
 │  │              │  │ + 8 more     │  │              │       │
 │  └──────────────┘  └──────────────┘  └──────────────┘       │
 │        WHO              HOW              WHAT                │
@@ -45,21 +46,21 @@ This writing system has three core components:
 
 ## Context Profiles
 
-Located in `/context/`, these JSON files define WHO I am and WHO I serve:
+Located in `/context/`, these files define WHO I am and WHO I serve:
 
 ### voice-dna.json
 **Purpose**: Captures my unique writing voice
 **Contains**: Tone, personality, signature phrases, language patterns, things I never say
 **When to read**: ALWAYS before writing any content
 
-### icp.json
+### icp.md
 **Purpose**: Defines my Ideal Client Profile (target audience)
-**Contains**: Demographics, psychographics, problems, language patterns, goals
+**Contains**: Demographics, psychographics, problems, objections, language patterns, buying triggers
 **When to read**: When creating any audience-facing content
 
-### business-profile.json
+### business-profile.md
 **Purpose**: Describes my business context
-**Contains**: Offerings, positioning, CTAs, social proof, content pillars
+**Contains**: Offerings, positioning, CTAs, content pillars, sales process
 **When to read**: When referencing products/services or crafting CTAs
 
 ---
@@ -90,6 +91,7 @@ Located in `/.claude/skills/`, these are packaged expertise for specific content
 | **voice-dna-creator** | "create voice profile", "analyze my writing" | JSON voice profile |
 | **icp-creator** | "create ICP", "define audience" | JSON ICP profile |
 | **business-profile-creator** | "create business profile" | JSON business profile |
+| **ig-carousel** | "Instagram carousel", "carousel", "IG carousel" | Slide-by-slide carousel with caption using 16 Killer Carousel Formulas |
 
 ### Skill Selection Rules
 
@@ -120,8 +122,8 @@ Located in `/knowledge/`, this contains reference material:
 STEP 1: LOAD CONTEXT
 ─────────────────────
 □ Read /context/voice-dna.json
-□ Read /context/icp.json (if audience-facing)
-□ Read /context/business-profile.json (if referencing offerings)
+□ Read /context/icp.md (if audience-facing)
+□ Read /context/business-profile.md (if referencing offerings)
 
 STEP 2: CHECK FOR SKILL
 ─────────────────────
@@ -213,7 +215,7 @@ Run through the skill's quality checklist (if applicable):
 ```
 User: "Write a LinkedIn post about [topic]"
 You:
-1. Read voice-dna.json, icp.json
+1. Read voice-dna.json, icp.md
 2. Read linkedin-post skill
 3. Select appropriate framework
 4. Generate post matching voice + targeting ICP
@@ -234,7 +236,7 @@ You:
 User: "Create 10 Substack notes from my newsletter"
 You:
 1. Read the newsletter file
-2. Read voice-dna.json, icp.json
+2. Read voice-dna.json, icp.md
 3. Read substack-note skill
 4. Generate 10 distinct notes using various frameworks
 ```
@@ -244,7 +246,7 @@ You:
 User: "Turn this article into a Twitter thread"
 You:
 1. Read the source article
-2. Read voice-dna.json, icp.json
+2. Read voice-dna.json, icp.md
 3. Read twitter-thread skill
 4. Extract key points and restructure for thread format
 ```
@@ -277,12 +279,12 @@ You:
 ## Troubleshooting
 
 ### If Output Sounds Generic
-1. Verify voice-dna.json is populated (not template)
+1. Verify voice-dna.json is populated (not a template)
 2. Check that you're reading it before writing
 3. Add more specific elements to voice DNA
 
 ### If Wrong Audience
-1. Verify icp.json is populated
+1. Verify icp.md is populated
 2. Check that you're reading it before writing
 3. Make ICP more specific
 
@@ -292,7 +294,7 @@ You:
 3. Verify skill file exists and has valid YAML
 
 ### If CTA Wrong
-1. Check business-profile.json CTAs
+1. Check business-profile.md CTAs
 2. Specify which CTA to use
 3. Update business profile with current offerings
 
@@ -302,7 +304,7 @@ You:
 
 ### Paths
 ```
-Context:     /context/*.json
+Context:     /context/voice-dna.json, /context/icp.md, /context/business-profile.md
 Skills:      /.claude/skills/*/SKILL.md
 Drafts:      /knowledge/drafts/
 Notes:       /knowledge/notes/
