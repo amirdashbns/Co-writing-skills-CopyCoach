@@ -90,6 +90,7 @@ Located in `/.claude/skills/`, these are packaged expertise for specific content
 | **voice-dna-creator** | "create voice profile", "analyze my writing" | JSON voice profile |
 | **icp-creator** | "create ICP", "define audience" | JSON ICP profile |
 | **business-profile-creator** | "create business profile" | JSON business profile |
+| **ig-carousel** | "Instagram carousel", "carousel", "IG carousel" | Slide-by-slide carousel with caption |
 
 ### Skill Selection Rules
 
