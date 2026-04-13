@@ -4,6 +4,9 @@ Pillar: AI Writing Done Right
 Formula: Educate 5 — Problem Awareness
 ICP Pain Point: The Sameness Problem
 10 slides, 1080x1350px (4:5 portrait), Hourglass Flow
+
+Design: carousel-design-specs.md
+Fonts: Montserrat (variable), DM Sans (variable)
 """
 
 from PIL import Image, ImageDraw, ImageFont
@@ -11,305 +14,306 @@ import os
 
 WIDTH, HEIGHT = 1080, 1350
 OUTPUT_DIR = os.path.dirname(os.path.abspath(__file__))
+REPO_ROOT = os.path.normpath(os.path.join(os.path.dirname(os.path.abspath(__file__)), "..", "..", ".."))
+FONT_DIR = os.path.join(REPO_ROOT, "context", "design", "fonts")
 
-FONT_BOLD = "/usr/share/fonts/truetype/dejavu/DejaVuSans-Bold.ttf"
-FONT_REGULAR = "/usr/share/fonts/truetype/dejavu/DejaVuSans.ttf"
+MONTSERRAT = os.path.join(FONT_DIR, "Montserrat-Variable.ttf")
+MONTSERRAT_ITALIC = os.path.join(FONT_DIR, "Montserrat-Italic-Variable.ttf")
+DM_SANS = os.path.join(FONT_DIR, "DMSans-Variable.ttf")
 
-PALETTE = {
-    "bg": "#0D0D0D",
-    "bg_alt": "#111111",
-    "accent": "#E8A838",
-    "white": "#FFFFFF",
-    "body": "#C8C8C8",
-    "muted": "#777777",
-    "tag_bg": "#1A1A1A",
-    "divider": "#252525",
-    "cta_btn": "#E8A838",
-    "cta_btn_text": "#0D0D0D",
-}
+# Design spec colors
+BG = "#FFF5F0"
+TEXT_PRIMARY = "#1A1A1A"
+TEXT_ACCENT = "#E63B2E"
+HANDLE_COLOR = "#3D2B1F"
+ARROW_COLOR = "#3D2B1F"
 
-# ── SLIDE CONTENT (Educate 5 — Problem Awareness) ─────────────────
-# Hourglass: Slide 1 zoomed out → 2-3 zoom in → 4-7 deep zoom →
-#            8-9 zoom back out → 10 connect to you
-SLIDES = [
-    {
-        "type": "cover",
-        "tag": "AI WRITING",
-        "headline": "Your AI content\nsounds generic.",
-        "sub": "Here's why →",
-    },
-    {
-        "type": "body",
-        "num": "01",
-        "heading": "You're doing everything\n\"right.\"",
-        "body": (
-            "Good prompts. Clear instructions.\n"
-            "Maybe even a \"write in my brand\n"
-            "voice\" at the end.\n\n"
-            "So why does it still sound like\n"
-            "everyone else's?"
-        ),
-    },
-    {
-        "type": "body",
-        "num": "02",
-        "heading": "The truth is →",
-        "body": (
-            "AI doesn't know you.\n\n"
-            "It doesn't know your quirks.\n"
-            "Your humor. Your opinions.\n"
-            "The way you start sentences.\n\n"
-            "So it defaults to Average."
-        ),
-    },
-    {
-        "type": "body",
-        "num": "03",
-        "heading": "\"Write in a casual tone\"\nis not context.",
-        "body": (
-            "YOUR version of casual is\n"
-            "different from mine.\n\n"
-            "\"Casual\" to AI means\n"
-            "\"corporate but with\n"
-            "contractions.\"\n\n"
-            "Didn't think so..."
-        ),
-    },
-    {
-        "type": "body",
-        "num": "04",
-        "heading": "Every time you hit\n\"Generate\" →",
-        "body": (
-            "You get something grammatically\n"
-            "perfect.\n\n"
-            "And completely forgettable.\n\n"
-            "Then you spend 45 min editing it\n"
-            "to not sound like AI."
-        ),
-    },
-    {
-        "type": "body",
-        "num": "05",
-        "heading": "I get it.",
-        "body": (
-            "You've tried prompt packs.\n"
-            "You've taken a course.\n"
-            "You've copy-pasted \"brand\n"
-            "guidelines\" into ChatGPT.\n\n"
-            "And it makes sense —\n"
-            "that's what everyone teaches."
-        ),
-    },
-    {
-        "type": "body",
-        "num": "06",
-        "heading": "But here's the thing:",
-        "body": (
-            "Prompts tell AI what to WRITE.\n\n"
-            "Context teaches AI\n"
-            "how to THINK like you.\n\n"
-            "Completely different game."
-        ),
-    },
-    {
-        "type": "body",
-        "num": "07",
-        "heading": "Instead of better\nprompts, try this →",
-        "body": (
-            "Feed AI your actual writing.\n"
-            "Your sentence patterns.\n"
-            "Your phrases. Your weird little\n"
-            "quirks.\n\n"
-            "THAT'S what kills generic."
-        ),
-    },
-    {
-        "type": "takeaway",
-        "heading": "It's not about the\nprompt.",
-        "sub": "It's about the CONTEXT.",
-        "footer": "A perfect prompt with zero context\nstill produces generic output. Every time.",
-    },
-    {
-        "type": "cta",
-        "heading": "I build AI writing\nsystems that sound\nlike YOU.",
-        "body": "Not like ChatGPT. Not like\neveryone else. Like you.",
-        "cta_text": "Comment \"VOICE\" to see how →",
-    },
-]
+# Design spec spacing
+PAD_TOP = 100
+PAD_BOTTOM = 160
+PAD_LEFT = 80
+PAD_RIGHT = 80
+GAP_HEADLINE_BODY = 60
+GAP_PARAGRAPH = 40
+GAP_BODY_CTA = 60
+HANDLE_BOTTOM = 40
+
+CONTENT_WIDTH = WIDTH - PAD_LEFT - PAD_RIGHT
 
 
-def font(path, size):
-    return ImageFont.truetype(path, size)
+# ── FONT HELPERS ──────────────────────────────────────────────────
+
+def montserrat(size, weight=900):
+    """Montserrat variable font. weight: 100-900"""
+    f = ImageFont.truetype(MONTSERRAT, size)
+    f.set_variation_by_axes([weight])
+    return f
 
 
-def rounded_rect(draw, xy, r, fill):
-    x0, y0, x1, y1 = xy
-    draw.rectangle([x0 + r, y0, x1 - r, y1], fill=fill)
-    draw.rectangle([x0, y0 + r, x1, y1 - r], fill=fill)
-    draw.pieslice([x0, y0, x0 + 2 * r, y0 + 2 * r], 180, 270, fill=fill)
-    draw.pieslice([x1 - 2 * r, y0, x1, y0 + 2 * r], 270, 360, fill=fill)
-    draw.pieslice([x0, y1 - 2 * r, x0 + 2 * r, y1], 90, 180, fill=fill)
-    draw.pieslice([x1 - 2 * r, y1 - 2 * r, x1, y1], 0, 90, fill=fill)
+def montserrat_italic(size, weight=700):
+    f = ImageFont.truetype(MONTSERRAT_ITALIC, size)
+    f.set_variation_by_axes([weight])
+    return f
 
 
-def text_h(draw, text, f):
-    bb = draw.multiline_textbbox((0, 0), text, font=f)
+def dm_sans(size, weight=400):
+    """DM Sans variable font. weight: 100-1000. opsz fixed at 14."""
+    f = ImageFont.truetype(DM_SANS, size)
+    f.set_variation_by_axes([14, weight])
+    return f
+
+
+# ── DRAWING HELPERS ───────────────────────────────────────────────
+
+def text_height(draw, text, font, spacing=0):
+    bb = draw.multiline_textbbox((0, 0), text, font=font, spacing=spacing)
     return bb[3] - bb[1]
 
 
-def accent_bar(draw, x, y, h):
-    rounded_rect(draw, (x, y, x + 5, y + h), 2, PALETTE["accent"])
+def draw_handle(draw):
+    f = dm_sans(28, 500)
+    handle = "@aicopycoach"
+    bb = draw.textbbox((0, 0), handle, font=f)
+    tw = bb[2] - bb[0]
+    x = (WIDTH - tw) // 2
+    y = HEIGHT - HANDLE_BOTTOM - (bb[3] - bb[1])
+    draw.text((x, y), handle, font=f, fill=HANDLE_COLOR)
 
 
-def swipe_dots(draw, current, total):
-    r = 5
-    gap = 22
-    total_w = total * r * 2 + (total - 1) * (gap - r * 2)
-    sx = (WIDTH - total_w) // 2
-    y = HEIGHT - 65
-    for i in range(total):
-        cx = sx + i * gap + r
-        c = PALETTE["accent"] if i == current else PALETTE["divider"]
-        draw.ellipse([cx - r, y - r, cx + r, y + r], fill=c)
+def draw_arrow(draw):
+    f = montserrat(48, 700)
+    arrow = "\u2192"
+    bb = draw.textbbox((0, 0), arrow, font=f)
+    x = WIDTH - PAD_RIGHT - (bb[2] - bb[0])
+    y = HEIGHT - 180
+    draw.text((x, y), arrow, font=f, fill=ARROW_COLOR)
 
 
-def top_bar(draw, thick=4):
-    draw.rectangle([0, 0, WIDTH, thick], fill=PALETTE["accent"])
+def draw_rich_text(draw, x, y, segments, spacing=0):
+    """Draw text with mixed colors. segments = [(text, font, color), ...]
+    Each segment is on its own line(s). Returns total height used."""
+    cursor_y = y
+    for text, fnt, color in segments:
+        line_sp = spacing
+        draw.multiline_text((x, cursor_y), text, font=fnt, fill=color, spacing=line_sp)
+        h = text_height(draw, text, fnt, line_sp)
+        cursor_y += h + GAP_PARAGRAPH
+    return cursor_y - y
 
 
-def slide_num(draw, num):
-    f = font(FONT_BOLD, 24)
-    draw.text((80, 75), num, font=f, fill=PALETTE["accent"])
+# ── SLIDE CONTENT ─────────────────────────────────────────────────
+
+SLIDES = [
+    # SLIDE 1: Cover (TYPE 1)
+    {
+        "type": "cover",
+        "headline": "YOUR AI CONTENT\nSOUNDS GENERIC.",
+        "subtitle": "Here's why.",
+        "arrow": True,
+    },
+    # SLIDE 2: Story/Context (TYPE 2) — zoom in
+    {
+        "type": "story",
+        "headline": "You're doing everything\n\"right.\"",
+        "body": [
+            ("Good prompts. Clear instructions.", TEXT_PRIMARY),
+            ("Maybe even a \"write in my brand\nvoice\" at the end.", TEXT_PRIMARY),
+            ("So why does it still sound like\neveryone else's?", TEXT_ACCENT),
+        ],
+    },
+    # SLIDE 3: Punch (TYPE 3) — the truth
+    {
+        "type": "punch",
+        "lines": [
+            ("AI DOESN'T", TEXT_PRIMARY),
+            ("KNOW YOU.", TEXT_ACCENT),
+        ],
+        "arrow": True,
+    },
+    # SLIDE 4: Body/Teaching (TYPE 4) — deep zoom
+    {
+        "type": "body",
+        "body": [
+            ("\"Write in a casual tone\" is not\ncontext.", TEXT_PRIMARY, True),
+            ("YOUR version of casual is\ndifferent from mine.", TEXT_PRIMARY, False),
+            ("\"Casual\" to AI means \"corporate\nbut with contractions.\"", TEXT_PRIMARY, False),
+            ("Didn't think so\u2026", TEXT_ACCENT, False),
+        ],
+    },
+    # SLIDE 5: Body/Teaching (TYPE 4) — deep zoom
+    {
+        "type": "body",
+        "body": [
+            ("Every time you hit \"Generate\" you\nget something grammatically\nperfect.", TEXT_PRIMARY, False),
+            ("And completely forgettable.", TEXT_ACCENT, True),
+            ("Then you spend 45 minutes editing\nit to not sound like AI.", TEXT_PRIMARY, False),
+        ],
+    },
+    # SLIDE 6: Body/Teaching (TYPE 4) — empathy
+    {
+        "type": "body",
+        "body": [
+            ("I get it.", TEXT_PRIMARY, True),
+            ("You've tried prompt packs.\nYou've taken a course.\nYou've copy-pasted \"brand\nguidelines\" into ChatGPT.", TEXT_PRIMARY, False),
+            ("And it makes sense \u2014 that's what\neveryone teaches.", TEXT_PRIMARY, False),
+        ],
+    },
+    # SLIDE 7: Punch (TYPE 3) — the shift
+    {
+        "type": "punch",
+        "lines": [
+            ("PROMPTS TELL AI", TEXT_PRIMARY),
+            ("WHAT TO WRITE.", TEXT_PRIMARY),
+            ("CONTEXT TEACHES AI", TEXT_PRIMARY),
+            ("HOW TO THINK", TEXT_ACCENT),
+            ("LIKE YOU.", TEXT_ACCENT),
+        ],
+        "arrow": True,
+    },
+    # SLIDE 8: Body/Teaching (TYPE 4) — the fix
+    {
+        "type": "body",
+        "body": [
+            ("Instead of better prompts \u2014", TEXT_PRIMARY, True),
+            ("Feed AI your actual writing.\nYour sentence patterns.\nYour phrases. Your weird little\nquirks.", TEXT_PRIMARY, False),
+            ("THAT'S what kills generic.", TEXT_ACCENT, True),
+        ],
+    },
+    # SLIDE 9: Punch/Takeaway (TYPE 3) — standalone screenshot
+    {
+        "type": "punch",
+        "lines": [
+            ("IT'S NOT ABOUT", TEXT_PRIMARY),
+            ("THE PROMPT.", TEXT_PRIMARY),
+            ("IT'S ABOUT", TEXT_PRIMARY),
+            ("THE CONTEXT.", TEXT_ACCENT),
+        ],
+        "arrow": False,
+    },
+    # SLIDE 10: CTA (TYPE 5)
+    {
+        "type": "cta",
+        "headline": "I build AI writing\nsystems that sound\nlike YOU.",
+        "body": "Not like ChatGPT.\nNot like everyone else.\nLike you.",
+        "cta_line": "Comment \"VOICE\" to see how \u2192",
+    },
+]
 
 
 # ── SLIDE RENDERERS ───────────────────────────────────────────────
 
 def render_cover(s, idx):
-    img = Image.new("RGB", (WIDTH, HEIGHT), PALETTE["bg"])
+    img = Image.new("RGB", (WIDTH, HEIGHT), BG)
     d = ImageDraw.Draw(img)
-    top_bar(d, 6)
 
-    # tag pill
-    tf = font(FONT_BOLD, 24)
-    tag = s["tag"]
-    tb = d.textbbox((0, 0), tag, font=tf)
-    tw, th = tb[2] - tb[0], tb[3] - tb[1]
-    tx, ty = 80, 140
-    rounded_rect(d, (tx - 14, ty - 8, tx + tw + 14, ty + th + 8), 6, PALETTE["tag_bg"])
-    d.text((tx, ty), tag, font=tf, fill=PALETTE["accent"])
+    # Headline: Montserrat Black, 74px, uppercase
+    hf = montserrat(74, 900)
+    y = PAD_TOP
+    head_sp = int(74 * 0.1)
+    d.multiline_text((PAD_LEFT, y), s["headline"], font=hf, fill=TEXT_PRIMARY, spacing=head_sp)
+    hh = text_height(d, s["headline"], hf, head_sp)
 
-    # headline
-    hf = font(FONT_BOLD, 86)
-    hy = 300
-    for line in s["headline"].split("\n"):
-        d.text((80, hy), line, font=hf, fill=PALETTE["white"])
-        lb = d.textbbox((0, 0), line, font=hf)
-        hy += (lb[3] - lb[1]) + 18
+    # Subtitle: Montserrat Bold Italic, 52px
+    sf = montserrat_italic(52, 700)
+    sy = y + hh + GAP_HEADLINE_BODY
+    d.text((PAD_LEFT, sy), s["subtitle"], font=sf, fill=TEXT_PRIMARY)
 
-    # accent dash
-    d.rectangle([80, hy + 30, 160, hy + 35], fill=PALETTE["accent"])
+    if s.get("arrow"):
+        draw_arrow(d)
+    draw_handle(d)
+    return img
 
-    # sub
-    sf = font(FONT_BOLD, 42)
-    d.text((80, hy + 65), s["sub"], font=sf, fill=PALETTE["accent"])
 
-    swipe_dots(d, idx, len(SLIDES))
+def render_story(s, idx):
+    img = Image.new("RGB", (WIDTH, HEIGHT), BG)
+    d = ImageDraw.Draw(img)
+
+    # Headline: Montserrat Bold, 56px, sentence case
+    hf = montserrat(56, 700)
+    y = PAD_TOP
+    head_sp = int(56 * 0.1)
+    d.multiline_text((PAD_LEFT, y), s["headline"], font=hf, fill=TEXT_PRIMARY, spacing=head_sp)
+    hh = text_height(d, s["headline"], hf, head_sp)
+
+    # Body paragraphs: DM Sans Regular, 42px
+    bf = dm_sans(42, 400)
+    by = y + hh + GAP_HEADLINE_BODY
+    body_sp = int(42 * 0.4)
+    for text, color in s["body"]:
+        d.multiline_text((PAD_LEFT, by), text, font=bf, fill=color, spacing=body_sp)
+        bh = text_height(d, text, bf, body_sp)
+        by += bh + GAP_PARAGRAPH
+
+    draw_handle(d)
+    return img
+
+
+def render_punch(s, idx):
+    img = Image.new("RGB", (WIDTH, HEIGHT), BG)
+    d = ImageDraw.Draw(img)
+
+    hf = montserrat(66, 900)
+    y = 120
+    line_sp = int(66 * 0.15)
+    for text, color in s["lines"]:
+        d.text((PAD_LEFT, y), text, font=hf, fill=color)
+        bb = d.textbbox((0, 0), text, font=hf)
+        y += (bb[3] - bb[1]) + line_sp
+
+    if s.get("arrow"):
+        draw_arrow(d)
+    draw_handle(d)
     return img
 
 
 def render_body(s, idx):
-    img = Image.new("RGB", (WIDTH, HEIGHT), PALETTE["bg_alt"])
+    img = Image.new("RGB", (WIDTH, HEIGHT), BG)
     d = ImageDraw.Draw(img)
-    top_bar(d)
-    slide_num(d, s["num"])
 
-    # heading with accent bar
-    hf = font(FONT_BOLD, 56)
-    hy = 155
-    hh = text_h(d, s["heading"], hf)
-    accent_bar(d, 80, hy + 4, hh)
-    d.multiline_text((100, hy), s["heading"], font=hf, fill=PALETTE["white"], spacing=12)
+    y = PAD_TOP
+    body_sp = int(42 * 0.4)
+    for text, color, bold in s["body"]:
+        fnt = dm_sans(44, 700) if bold else dm_sans(42, 400)
+        d.multiline_text((PAD_LEFT, y), text, font=fnt, fill=color, spacing=body_sp)
+        h = text_height(d, text, fnt, body_sp)
+        y += h + GAP_PARAGRAPH
 
-    # divider
-    div_y = hy + hh + 50
-    d.rectangle([80, div_y, WIDTH - 80, div_y + 2], fill=PALETTE["divider"])
-
-    # body
-    bf = font(FONT_REGULAR, 34)
-    d.multiline_text((80, div_y + 30), s["body"], font=bf, fill=PALETTE["body"], spacing=14)
-
-    swipe_dots(d, idx, len(SLIDES))
-    return img
-
-
-def render_takeaway(s, idx):
-    img = Image.new("RGB", (WIDTH, HEIGHT), PALETTE["bg"])
-    d = ImageDraw.Draw(img)
-    top_bar(d, 6)
-
-    # heading
-    hf = font(FONT_BOLD, 68)
-    hy = 280
-    hh = text_h(d, s["heading"], hf)
-    d.multiline_text((80, hy), s["heading"], font=hf, fill=PALETTE["white"], spacing=14)
-
-    # accent sub
-    sf = font(FONT_BOLD, 68)
-    sy = hy + hh + 30
-    d.multiline_text((80, sy), s["sub"], font=sf, fill=PALETTE["accent"], spacing=14)
-
-    # divider
-    sh = text_h(d, s["sub"], sf)
-    div_y = sy + sh + 50
-    d.rectangle([80, div_y, WIDTH - 80, div_y + 2], fill=PALETTE["divider"])
-
-    # footer
-    ff = font(FONT_REGULAR, 32)
-    d.multiline_text((80, div_y + 30), s["footer"], font=ff, fill=PALETTE["muted"], spacing=12)
-
-    swipe_dots(d, idx, len(SLIDES))
+    draw_handle(d)
     return img
 
 
 def render_cta(s, idx):
-    img = Image.new("RGB", (WIDTH, HEIGHT), PALETTE["bg"])
+    img = Image.new("RGB", (WIDTH, HEIGHT), BG)
     d = ImageDraw.Draw(img)
-    top_bar(d, 6)
 
-    # heading
-    hf = font(FONT_BOLD, 64)
-    hy = 250
-    hh = text_h(d, s["heading"], hf)
-    d.multiline_text((80, hy), s["heading"], font=hf, fill=PALETTE["white"], spacing=14)
+    # Headline: Montserrat Bold, 58px
+    hf = montserrat(58, 700)
+    y = PAD_TOP
+    head_sp = int(58 * 0.1)
+    d.multiline_text((PAD_LEFT, y), s["headline"], font=hf, fill=TEXT_PRIMARY, spacing=head_sp)
+    hh = text_height(d, s["headline"], hf, head_sp)
 
-    # dash
-    d.rectangle([80, hy + hh + 40, 160, hy + hh + 45], fill=PALETTE["accent"])
+    # Body: DM Sans Regular, 40px
+    bf = dm_sans(40, 400)
+    by = y + hh + GAP_HEADLINE_BODY - 20
+    body_sp = int(40 * 0.4)
+    d.multiline_text((PAD_LEFT, by), s["body"], font=bf, fill=TEXT_PRIMARY, spacing=body_sp)
+    bh = text_height(d, s["body"], bf, body_sp)
 
-    # body
-    bf = font(FONT_REGULAR, 34)
-    by = hy + hh + 80
-    d.multiline_text((80, by), s["body"], font=bf, fill=PALETTE["muted"], spacing=12)
-    bh = text_h(d, s["body"], bf)
+    # CTA line: Montserrat Bold, 44px, red accent
+    cf = montserrat(44, 700)
+    cy = by + bh + GAP_BODY_CTA
+    d.text((PAD_LEFT, cy), s["cta_line"], font=cf, fill=TEXT_ACCENT)
 
-    # button
-    btf = font(FONT_BOLD, 32)
-    bt = s["cta_text"]
-    bb = d.textbbox((0, 0), bt, font=btf)
-    bw, bh2 = bb[2] - bb[0], bb[3] - bb[1]
-    px, py = 44, 20
-    bx = (WIDTH - bw - 2 * px) // 2
-    btn_y = by + bh + 80
-    rounded_rect(d, (bx, btn_y, bx + bw + 2 * px, btn_y + bh2 + 2 * py), 10, PALETTE["cta_btn"])
-    d.text((bx + px, btn_y + py), bt, font=btf, fill=PALETTE["cta_btn_text"])
-
-    swipe_dots(d, idx, len(SLIDES))
+    draw_handle(d)
     return img
 
 
 RENDERERS = {
     "cover": render_cover,
+    "story": render_story,
+    "punch": render_punch,
     "body": render_body,
-    "takeaway": render_takeaway,
     "cta": render_cta,
 }
 
@@ -321,7 +325,7 @@ def main():
         fname = f"slide_{idx + 1:02d}.png"
         img.save(os.path.join(OUTPUT_DIR, fname), "PNG")
         print(f"  {fname}  ({s['type']})")
-    print(f"\n  {len(SLIDES)} slides → {OUTPUT_DIR}/")
+    print(f"\n  {len(SLIDES)} slides -> {OUTPUT_DIR}/")
 
 
 if __name__ == "__main__":

@@ -11,10 +11,12 @@ Create binge-worthy Instagram carousels that match your voice, resonate with you
 
 1. **Read context profiles**:
    - `/context/voice-dna.json` - Match the user's voice
-   - `/context/icp.json` - Write for the target audience
-   - `/context/business-profile.json` - Reference offerings when relevant
+   - `/context/icp.md` - Write for the target audience
+   - `/context/business-profile.md` - Reference offerings when relevant
 
-2. **Check for source material** in `/knowledge/` if repurposing content
+2. **Read design specs**: `/context/design/carousel-design-specs.md` - Follow exact colors, fonts, spacing, and slide type templates when generating slide images
+
+3. **Check for source material** in `/knowledge/` if repurposing content
 
 3. **Identify the content pillar** (ask if not specified):
    - AI Writing Done Right (30%)
