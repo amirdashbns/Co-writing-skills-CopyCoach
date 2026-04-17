@@ -1,0 +1,316 @@
+{
+  "market_intelligence": {
+    "version": "1.0",
+    "last_updated": "2026-04-15",
+    "scan_focus": "How the copywriting / digital marketing / entrepreneurship market uses AI for content creation",
+    "subreddits_scanned": [
+      "r/copywriting",
+      "r/Entrepreneur",
+      "r/Solopreneur",
+      "r/EntrepreneurRideAlong",
+      "r/DigitalMarketing",
+      "r/digital_marketing",
+      "r/SaaS",
+      "r/freelancewriters",
+      "r/ChatGPT",
+      "r/ClaudeAI",
+      "r/MarketingHelp",
+      "r/ContentMarketing",
+      "r/AIBranding",
+      "r/PromptEngineering",
+      "r/AiForSmallBusiness",
+      "r/AIContentAutomators"
+    ],
+
+    "pain_points": {
+      "primary": [
+        {
+          "pain_point": "AI output sounds generic and doesn't capture personal/brand voice",
+          "severity": "HIGH",
+          "frequency": "Mentioned in nearly every thread about AI writing",
+          "sample_quotes": [
+            "Your content feels... empty. It's well-written, but it doesn't sound like us anymore.",
+            "AI comms sound crap.",
+            "People still hate the AI voice which actually proves there's room for something that sounds human again.",
+            "Everyone sounds exactly the same now.",
+            "Your audience can smell AI content from a mile away.",
+            "Super formulaic — intro, 3 main points, conclusion, every single time."
+          ]
+        },
+        {
+          "pain_point": "Editing AI output takes as long as writing from scratch",
+          "severity": "HIGH",
+          "frequency": "Reported by majority of AI content users",
+          "sample_quotes": [
+            "I still end up editing everything heavily before it's usable.",
+            "AI drafts are 60-70% usable at best.",
+            "3-5 hours per article even with AI assistance."
+          ]
+        },
+        {
+          "pain_point": "Don't know how to prompt effectively",
+          "severity": "MEDIUM",
+          "frequency": "Common across beginner and intermediate users",
+          "sample_quotes": [
+            "I'm bad at writing prompts.",
+            "90% of bad ChatGPT outputs come from the same problem: we write prompts like Google searches instead of project briefs.",
+            "Outputs that are too generic, prompts that need 10 rewrites to get decent results."
+          ]
+        },
+        {
+          "pain_point": "Tool fatigue and subscription cost fragmentation",
+          "severity": "MEDIUM",
+          "frequency": "Growing concern, especially among solopreneurs",
+          "sample_quotes": [
+            "Cost and workflow fragmentation are becoming annoying and really unsustainable.",
+            "Drowning in content tools."
+          ]
+        },
+        {
+          "pain_point": "AI is depressing freelance rates while not reducing actual work",
+          "severity": "HIGH",
+          "frequency": "Common among freelance writers and copywriters",
+          "sample_quotes": [
+            "AI was supposed to help freelancers. Instead it just helped clients cut my $800 projects to $200.",
+            "Clients assume AI makes writing trivial."
+          ]
+        }
+      ],
+      "secondary": [
+        "AI struggles with nuanced industry-specific content",
+        "AI hallucinates facts and requires manual fact-checking",
+        "Conversion rates drop 20-30% when using AI for ad/landing page copy",
+        "Junior writers using AI as a crutch instead of building foundational skills",
+        "Content marketing eats 90% of solopreneur time even with AI"
+      ]
+    },
+
+    "market_sentiment": {
+      "overall": "Frustrated but engaged. Most people are actively using AI, getting mediocre results, and looking for a better way.",
+      "distribution": {
+        "frustrated_but_stuck": "~45% — Using AI, disappointed with output quality, don't know how to improve",
+        "cautiously_optimistic": "~30% — Found specific use cases that work, always with heavy caveats",
+        "skeptical_and_vocal": "~15% — Actively push back against hype, cite failed experiments",
+        "actively_hostile": "~10% — View AI content as pollution, building human-only alternatives"
+      },
+      "hype_vs_reality_gap": "Large. AI tool marketing promises effortless content at scale. Reality requires significant skill, heavy editing, and strategic human judgment. People feel lied to by vendor marketing."
+    },
+
+    "current_beliefs": {
+      "dominant_beliefs": [
+        "AI is good for volume, bad for quality",
+        "Human editing is always required — publishing raw AI output is unacceptable",
+        "AI cannot capture authentic voice — the best you get is 'close enough'",
+        "AI's real value is in operations (automation, data, workflows), not creative work",
+        "Most AI tools are interchangeable — tool choice matters less than technique",
+        "Audiences can now detect AI content instantly and it damages trust",
+        "Traditional marketing fundamentals still matter more than AI mastery"
+      ],
+      "beliefs_creating_opportunities": [
+        "AI can't capture voice (opportunity: prove it can with a system)",
+        "Prompt engineering is overrated (opportunity: show that systems > prompts)",
+        "AI tools are all the same (opportunity: differentiate through methodology, not tools)",
+        "Volume always costs quality (opportunity: show voice-matched volume)"
+      ],
+      "beliefs_creating_resistance": [
+        "People have been burned by AI hype — they're skeptical of big promises",
+        "Many believe the editing time negates any AI time savings",
+        "Strong belief that 'anyone can tell' when content is AI-generated",
+        "Growing anti-AI sentiment in creative communities"
+      ]
+    },
+
+    "market_sophistication": {
+      "tier_1_beginners": {
+        "percentage": "~50%",
+        "description": "Open ChatGPT, type a basic prompt, get generic output, use it or manually rewrite",
+        "behaviors": [
+          "Type 'Write me a LinkedIn post about X' with no context",
+          "No custom instructions or system prompts",
+          "Use one tool (usually ChatGPT free or Plus)",
+          "No voice profile or brand guidelines loaded",
+          "Publish AI output as-is or do surface-level edits"
+        ]
+      },
+      "tier_2_intermediate": {
+        "percentage": "~30%",
+        "description": "Use prompt frameworks, save templates, iterate on outputs, but still fight the voice problem",
+        "behaviors": [
+          "Use ROLE/CONTEXT/TASK/FORMAT prompt structures",
+          "Have saved prompt templates for recurring content types",
+          "Spend time iterating and refining prompts",
+          "May paste writing samples into prompts",
+          "Use 1-2 paid AI tools (ChatGPT Plus, Claude Pro)",
+          "Edit 30-50% of AI output before publishing"
+        ]
+      },
+      "tier_3_advanced": {
+        "percentage": "~15%",
+        "description": "Built custom GPTs or Claude Projects, feed AI brand voice guides, have repeatable workflows",
+        "behaviors": [
+          "Custom GPTs or Claude Projects with brand context baked in",
+          "Feed AI writing samples and style guides",
+          "Dedicated AI projects per marketing function",
+          "Structured workflow: research → outline → draft → edit",
+          "Content repurposing pipelines (1 piece → many)",
+          "60-70% usable first drafts, significant time savings"
+        ]
+      },
+      "tier_4_expert": {
+        "percentage": "~5%",
+        "description": "AI agent platforms, multi-tool automation, integrated business stack, specialized AI workers",
+        "behaviors": [
+          "AI agents handling email, blog, social, outreach separately",
+          "Automation platforms (Marblism, n8n, Make)",
+          "Integrated with CRM, analytics, scheduling tools",
+          "Content repurposing fully systematized",
+          "15-30% manual review, rest is automated",
+          "Measuring ROI and optimizing based on data"
+        ]
+      }
+    },
+
+    "common_language": {
+      "problem_language": [
+        "AI slop",
+        "sounds generic",
+        "sounds like AI",
+        "AI-ish",
+        "doesn't sound like me",
+        "cookie-cutter",
+        "robotic",
+        "empty",
+        "overhyped",
+        "heavy editing required",
+        "templated",
+        "formulaic",
+        "AI comms sound crap"
+      ],
+      "aspiration_language": [
+        "brand voice",
+        "sound human",
+        "authentic",
+        "my voice",
+        "consistent tone",
+        "content system",
+        "content machine",
+        "workflow",
+        "at scale",
+        "repurpose",
+        "co-pilot"
+      ],
+      "technical_terms": [
+        "prompt engineering",
+        "Custom GPT",
+        "Claude Project",
+        "custom instructions",
+        "system prompt",
+        "voice samples",
+        "brand DNA",
+        "persona",
+        "context window",
+        "fine-tuning",
+        "RAG",
+        "AI agents"
+      ],
+      "emotional_language": [
+        "frustrated",
+        "burned",
+        "lied to",
+        "struggling",
+        "drowning",
+        "overpromised",
+        "waste of time",
+        "game changer",
+        "blown away",
+        "finally"
+      ],
+      "community_slang": [
+        "AI slop",
+        "the voice problem",
+        "prompt hacking",
+        "humanizer",
+        "the AI playbook",
+        "ship it",
+        "content treadmill"
+      ]
+    },
+
+    "content_opportunities": {
+      "underserved_questions": [
+        "How do I get AI to actually sound like me?",
+        "What's a real, step-by-step AI content workflow?",
+        "Is AI content creation actually saving me time?",
+        "Claude vs ChatGPT vs Gemini — which one for writing?",
+        "How do I use AI for marketing without sounding like everyone else?",
+        "Can AI actually help grow my business or is it just hype?"
+      ],
+      "high_engagement_debates": [
+        "Is AI replacing copywriters?",
+        "AI content quality vs human quality",
+        "Is prompt engineering worth learning?",
+        "Do AI humanizer tools actually work?",
+        "Should you disclose AI use to clients?"
+      ],
+      "content_gaps": [
+        "A proven, replicable system for voice-matched AI content",
+        "Honest ROI breakdowns with real numbers",
+        "The middle path: AI as skilled co-writer (not replacement, not garbage)",
+        "Specific workflows with exact steps, not vague frameworks",
+        "Before/after examples: generic AI output vs. voice-matched output"
+      ],
+      "recommended_angles": [
+        "Lead with the voice problem — it's universal and unsolved",
+        "Show don't tell — before/after examples beat theory",
+        "Position against the prompt template industry (systems > prompts)",
+        "Use real Reddit stories as relatable hooks",
+        "Acknowledge frustrations honestly to build trust with a skeptical market"
+      ]
+    },
+
+    "key_stories": [
+      {
+        "title": "The 6-Month Wake-Up Call",
+        "summary": "Marketer spent 6 months fully automating campaigns with AI. Metrics collapsed — email open rates dropped from 32% to 18%. Client said content felt 'empty.' Pivoted to AI for data analysis only, humans for creative. Revenue up 40%.",
+        "source_subreddit": "r/MarketingHelp",
+        "key_quote": "Your content feels... empty. It's well-written, but it doesn't sound like us anymore."
+      },
+      {
+        "title": "The $750 Reality Check",
+        "summary": "Freelancer tested ChatGPT + Midjourney for 3 months. 20 articles. $750 total. 3-5 hours per article despite AI. Concluded most AI monetization advice is BS.",
+        "source_subreddit": "r/AIContentAutomators",
+        "key_quote": "Most AI monetization advice is BS."
+      },
+      {
+        "title": "The Freelancer's Race to the Bottom",
+        "summary": "Freelance writer watched project rates drop from $700-800 to $200 overnight once clients assumed AI makes writing trivial.",
+        "source_subreddit": "r/passive_income",
+        "key_quote": "AI was supposed to help freelancers. Instead it just helped clients cut my $800 projects to $200."
+      },
+      {
+        "title": "The Content Machine",
+        "summary": "Solo SaaS founder turns 1 blog post into 12 pieces across 5 channels weekly. Claude + NotebookLM + Buffer. 5 hours/week down from 20. Key: consistency over novelty.",
+        "source_subreddit": "r/SaaS",
+        "key_quote": "Consistency proved more important than novelty."
+      },
+      {
+        "title": "The AI Agent Experiment",
+        "summary": "Solo founder used AI agent platform for 90 days. Saved 21 hours/week, 210% traffic increase, $47k revenue from 5 new clients. Cost: $39/month. Still needed 15-30% manual review.",
+        "source_subreddit": "r/AiForSmallBusiness",
+        "key_quote": "The AI couldn't fully replace judgment."
+      },
+      {
+        "title": "The Mentor's Dilemma",
+        "summary": "Experienced DR copywriter took on junior writer who kept submitting AI slop. Could immediately tell but struggled with how to address it constructively.",
+        "source_subreddit": "r/copywriting",
+        "key_quote": "They keep submitting AI slop."
+      },
+      {
+        "title": "The 6-Week Zero",
+        "summary": "Entrepreneur tested AI income streams for 6 weeks. WordPress blog, Ghost blog, Fiverr gigs. Zero revenue. Every idea collapsed under basic due diligence.",
+        "source_subreddit": "r/Entrepreneur",
+        "key_quote": "Most people making money with AI either already had an audience or are selling AI courses."
+      }
+    ]
+  }
+}

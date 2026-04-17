@@ -32,7 +32,9 @@ This writing system has three core components:
 │  │ voice-dna    │  │ linkedin-post│  │ drafts/      │       │
 │  │ icp          │  │ twitter-     │  │ notes/       │       │
 │  │ business-    │  │   thread     │  │ archive/     │       │
-│  │   profile    │  │ substack-note│  │              │       │
+│  │   profile    │  │ substack-note│  │ research/    │       │
+│  │ market-      │  │ reddit-      │  │              │       │
+│  │  intelligence│  │  market-scan │  │              │       │
 │  │              │  │ + 8 more     │  │              │       │
 │  └──────────────┘  └──────────────┘  └──────────────┘       │
 │        WHO              HOW              WHAT                │
@@ -62,6 +64,12 @@ Located in `/context/`, these JSON files define WHO I am and WHO I serve:
 **Contains**: Offerings, positioning, CTAs, social proof, content pillars
 **When to read**: When referencing products/services or crafting CTAs
 
+### market-intelligence.json
+**Purpose**: Captures real-world market data from Reddit research
+**Contains**: Pain points, sentiment, beliefs, tech adoption tiers, language patterns, content opportunities, real user stories
+**When to read**: When creating audience-facing content, choosing topics, or referencing market realities
+**How to generate**: Run the reddit-market-scanner skill
+
 ---
 
 ## Skills
@@ -90,6 +98,7 @@ Located in `/.claude/skills/`, these are packaged expertise for specific content
 | **voice-dna-creator** | "create voice profile", "analyze my writing" | JSON voice profile |
 | **icp-creator** | "create ICP", "define audience" | JSON ICP profile |
 | **business-profile-creator** | "create business profile" | JSON business profile |
+| **reddit-market-scanner** | "scan reddit", "market research", "what does my audience think" | Market intelligence report + JSON |
 
 ### Skill Selection Rules
 
@@ -109,6 +118,7 @@ Located in `/knowledge/`, this contains reference material:
 | `drafts/` | Work in progress | Continuing previous work |
 | `notes/` | Ideas, research, outlines | Looking for inspiration or data |
 | `archive/` | Published content | Repurposing or maintaining consistency |
+| `research/` | Reddit scans, market intelligence reports | Understanding audience, finding content ideas |
 
 ---
 
