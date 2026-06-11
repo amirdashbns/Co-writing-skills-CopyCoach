@@ -1,123 +1,250 @@
 {
   "business_profile": {
     "version": "1.0",
-    "last_updated": "2025-01-01",
+    "last_updated": "2026-06-11",
 
     "company_overview": {
-      "name": "YOUR COMPANY/BRAND NAME",
-      "tagline": "YOUR TAGLINE - One line that captures what you do",
-      "mission": "YOUR MISSION - Why you exist",
-      "vision": "YOUR VISION - Where you're heading"
+      "name": "AI Copy Coach",
+      "tagline": "Stop fighting ChatGPT. Install a system that writes like you.",
+      "mission": "We turn AI overwhelm into a done-for-you copywriting and marketing system, so purpose-driven businesses can create content in their own voice that actually drives results.",
+      "vision": "In the next 5 years, help 1,000 businesses install a completely automated copywriting system that runs in their business."
     },
 
     "value_proposition": {
-      "primary_value": "MAIN VALUE - The #1 thing you help people achieve",
-      "unique_mechanism": "YOUR METHOD - How you uniquely deliver this value",
+      "primary_value": "A done-for-you copywriting and marketing system installed directly in your business — a co-writer and marketing analyst that writes and publishes all your content in your voice, so you never need to hire a copywriter or fight with AI again.",
+      "unique_mechanism": "Context engineering, not prompt engineering. The system is installed in Cursor and built on your actual Voice DNA, ICP, and business context — so it already knows your voice, your audience, and your offers. You chat with it; it produces on-voice copy. Coaching on how to run the system is included, and new skills are added over time.",
       "key_differentiators": [
-        "DIFFERENTIATOR 1 - What sets you apart",
-        "DIFFERENTIATOR 2 - Another unique aspect",
-        "DIFFERENTIATOR 3 - Third differentiator"
+        "A system installed in your business — not a tool you rent, a course you watch, or a guru you follow",
+        "Built on your actual voice patterns (Voice DNA), so output sounds like you, not generic AI",
+        "Marketing agency in a box: a co-writer AND a marketing analyst in one system",
+        "One-time install you own forever — no monthly subscription, no ongoing agency retainer",
+        "Coaching included, so you actually know how to use it",
+        "Expands over time as new skills are added"
       ]
     },
 
     "offerings": {
-      "products": [
-        {
-          "name": "PRODUCT NAME",
-          "type": "TYPE - e.g., Course, Software, Service",
-          "description": "Brief description",
-          "price_point": "PRICE or RANGE",
-          "ideal_for": "Who this is best for"
-        }
-      ],
+      "products": [],
       "services": [
         {
-          "name": "SERVICE NAME",
-          "type": "TYPE - e.g., Consulting, Done-for-you, Coaching",
-          "description": "Brief description",
-          "price_point": "PRICE or RANGE",
-          "ideal_for": "Who this is best for"
+          "name": "The AI Copy Coach System",
+          "type": "Done-for-you system installation + included coaching",
+          "description": "A complete copywriting and marketing system installed in your business using Cursor — a co-writer and marketing analyst ('marketing agency in a box') built on your Voice DNA, ICP, and business context. You chat with it to create and publish all your content, in your voice, with full knowledge of your business and audience. Coaching on how to use and run the system is included. New skills are added over time. No need to hire copywriters; no more AI confusion.",
+          "price_point": "$1,997 one-time (price under review — Amir considers this still underpriced)",
+          "includes": [
+            "Full system install in the client's business (via Cursor)",
+            "Custom Voice DNA, ICP, and business-profile context",
+            "Library of writing skills (LinkedIn, Twitter/X, Substack, email sequences, thought leadership, how-to, bios, profile optimization, and more)",
+            "Reddit market-scanner / market-intelligence capability",
+            "Coaching on how to use the system",
+            "Ongoing additions of new skills over time"
+          ],
+          "ideal_for": "Online service providers (coaches, consultants, agency owners, course creators) doing $200K-$1M+/year who value their voice and would rather invest money than time"
         }
       ],
       "free_resources": [
         {
-          "name": "RESOURCE NAME",
-          "type": "TYPE - e.g., Newsletter, Lead magnet, Community",
-          "description": "Brief description",
-          "value": "What people get from it"
+          "name": "TBD — newsletter (not yet named)",
+          "type": "Newsletter",
+          "description": "Regular newsletter teaching the AI Copy Coach philosophy and approach.",
+          "value": "Demonstrates the voice and method in action; primary nurture channel.",
+          "status": "Planned — name to be decided"
+        },
+        {
+          "name": "TBD — lead magnet",
+          "type": "Lead magnet",
+          "description": "A lead magnet to be written using this very system, based on the work done here.",
+          "value": "Doubles as proof-of-concept / demonstration content.",
+          "status": "Planned — to be created with the system"
         }
       ]
     },
 
     "positioning": {
-      "market_position": "POSITION - e.g., Premium, accessible, budget-friendly",
-      "competitor_comparison": "HOW YOU DIFFER - Without naming competitors",
-      "category": "CATEGORY - What category do you compete in",
-      "niche_focus": "NICHE - Your specific area of focus"
+      "market_position": "Premium but radically better value than the alternatives — a one-time 'agency in a box' for a fraction of the cost of an agency, retainer, or copywriter.",
+      "competitor_comparison": "Anti-guru, anti-fluff, anti-course. Not a prompt pack, not a 'ChatGPT for business' course, not a SaaS writing tool, not a copywriter or agency on retainer. It's an owned system installed in your business that replaces all of them — so you never need to hire a copywriter again.",
+      "category": "AI-assisted copywriting & marketing systems (done-for-you)",
+      "niche_focus": "Installing done-for-you, voice-matched AI copywriting systems for purpose-driven online service providers"
     },
 
     "brand_voice_summary": {
-      "personality": "PERSONALITY - How your brand comes across",
-      "tone": "TONE - The overall feeling of your communication",
+      "personality": "Irreverent, direct, self-aware, anti-guru, encouraging without being cheesy",
+      "tone": "Very casual and conversational, dry humor, confident, warm underneath — entertaining, never hype-y or salesy",
       "values_demonstrated": [
-        "VALUE 1 - A value you demonstrate in content",
-        "VALUE 2",
-        "VALUE 3"
+        "Make AI sound human, not robotic",
+        "No fluff, no hype, no overpriced courses",
+        "Simplicity wins — systems beat winging it",
+        "Be willing to offend some people to connect with your core audience",
+        "Never be boring"
       ]
     },
 
     "social_proof": {
-      "key_metrics": [
-        "METRIC 1 - e.g., 10,000+ newsletter subscribers",
-        "METRIC 2 - e.g., 500+ clients served",
-        "METRIC 3 - e.g., Featured in [publications]"
-      ],
-      "testimonial_themes": [
-        "THEME 1 - Common things clients say",
-        "THEME 2 - Another common praise"
-      ],
-      "notable_clients_or_features": [
-        "CLIENT/FEATURE 1",
-        "CLIENT/FEATURE 2"
-      ]
+      "key_metrics": [],
+      "testimonial_themes": [],
+      "notable_clients_or_features": [],
+      "proof_strategy": "Limited traditional social proof at this stage. Primary proof is demonstration content — showing the system producing on-voice copy — rather than testimonials or metrics.",
+      "status": "To be built over time"
     },
 
     "content_pillars": {
+      "basis": "Four-pillar mix with allocation percentages, each pillar organized around specific content formulas (Educate / Relate / Inspire / Sell). Grounded in the AI-writing market sentiment from market-intelligence.json.",
+      "allocation_note": "Percentages indicate share of total content output.",
       "primary_topics": [
-        "TOPIC 1 - Main subject you cover",
-        "TOPIC 2 - Second key topic",
-        "TOPIC 3 - Third key topic"
+        {
+          "pillar": "AI Writing Done Right",
+          "color": "blue",
+          "allocation": "30%",
+          "role": "Authority pillar — the workhorse. Teach people what they're doing wrong with AI and what right looks like.",
+          "formulas": [
+            {
+              "formula": "Educate 1 — Actionable Tips",
+              "type": "Tips list",
+              "example": "5 things to stop doing when you use AI to write"
+            },
+            {
+              "formula": "Educate 2 — Expert Showcase",
+              "type": "Deep dive with examples",
+              "example": "How context engineering actually works (and why prompts don't)"
+            },
+            {
+              "formula": "Educate 3 — Value Share / Stats",
+              "type": "Fact -> truth -> tips",
+              "example": "82% of people can spot AI writing. Here's why yours gets flagged."
+            },
+            {
+              "formula": "Educate 5 — Problem Awareness",
+              "type": "Reframe the real problem",
+              "example": "The problem isn't AI. It's that you're using it without context."
+            },
+            {
+              "formula": "Sell 2 — FAQ / Objection Handling",
+              "type": "Handle objections",
+              "example": "Why 'AI can't capture my voice' is wrong (and right)"
+            }
+          ]
+        },
+        {
+          "pillar": "The Content System",
+          "color": "green",
+          "allocation": "25%",
+          "role": "Proof pillar — show, don't tell. Before/afters of AI slop vs. system output, behind-the-scenes of the workflow. Builds trust through evidence.",
+          "formulas": [
+            {
+              "formula": "Relate 1 — Reflections & Recaps",
+              "type": "Story of transformation",
+              "example": "I switched from prompts to context engineering. Here's what happened."
+            },
+            {
+              "formula": "Relate 3 — Behind the Scenes",
+              "type": "Process walkthrough",
+              "example": "How I made 7 days of content in 47 minutes (step by step)"
+            },
+            {
+              "formula": "Inspire 2 — Case Study",
+              "type": "Client results",
+              "example": "How [client] went from 3 hours per post to 20 minutes"
+            },
+            {
+              "formula": "Inspire 3 — Before & After",
+              "type": "Visual transformation",
+              "example": "Before/after: Generic AI copy vs. Voice DNA copy"
+            }
+          ]
+        },
+        {
+          "pillar": "Copywriting Principles That AI Makes Easier",
+          "color": "yellow",
+          "allocation": "20%",
+          "role": "Value pillar — positions Amir as someone who understands writing, not just AI. Give actual templates and frameworks.",
+          "formulas": [
+            {
+              "formula": "Educate 1 — Actionable Tips",
+              "type": "Tips list",
+              "example": "3 copywriting hooks that work every time (and how to get AI to write them)"
+            },
+            {
+              "formula": "Educate 3 — Value Share",
+              "type": "Fact -> truth -> tips",
+              "example": "The #1 reason your copy doesn't convert (AI or not)"
+            },
+            {
+              "formula": "Educate 4 — Plug & Play",
+              "type": "Templates / swipe files",
+              "example": "Plug-and-play CTAs for every type of post"
+            },
+            {
+              "formula": "Inspire 1 — Visualizations",
+              "type": "Future projection",
+              "example": "If you learned one copywriting principle a week for 3 months..."
+            }
+          ]
+        },
+        {
+          "pillar": "The Anti-Guru",
+          "color": "red",
+          "allocation": "15%",
+          "role": "Personality pillar — the spicy content. Hot takes, calling out the AI hype machine, mocking 'In today's rapidly evolving landscape...'. Engagement invitations drive saves and comments.",
+          "formulas": [
+            {
+              "formula": "Educate 5 — Problem Awareness",
+              "type": "Call out BS",
+              "example": "Why 'providing value' doesn't work (and what to do instead)"
+            },
+            {
+              "formula": "Relate 2 — Story Shares",
+              "type": "Personal story with lesson",
+              "example": "I bought a $497 prompt pack. Here's what happened."
+            },
+            {
+              "formula": "Relate 4 — Engagement Invitations",
+              "type": "Interactive / fun",
+              "example": "Which AI user are you? The Prompt Hoarder, The Over-Editor, or The Delusional?"
+            },
+            {
+              "formula": "Sell 1 — The Only Option",
+              "type": "Tear down alternatives",
+              "example": "The problem with prompt packs, AI courses, and writing tools"
+            }
+          ]
+        }
       ],
-      "content_mission": "WHY - The purpose behind your content",
-      "content_style": "HOW - The style/approach of your content"
+      "format_principle": "Show, don't tell. Because social proof is limited, lead with before/after demonstrations (generic AI output vs. voice-matched output), especially in The Content System pillar.",
+      "recurring_vehicle": "Email & the T.A.L.E. framework (Tell a story, Anchor the lesson, Link to the offer, Encourage action) used as a demonstration vehicle across pillars.",
+      "content_mission": "Show online businesses that the problem was never AI — it was the approach. Demonstrate, in Amir's voice, that a system installed in your business beats prompts, courses, and copywriters.",
+      "content_style": "Casual, punchy, contrarian. Story-driven (T.A.L.E.), paradigm shifts over how-to fluff, demonstration over claims. Entertaining first."
     },
 
     "calls_to_action": {
       "primary_cta": {
-        "action": "MAIN CTA - e.g., Subscribe to newsletter",
-        "url": "URL if applicable",
-        "when_to_use": "When to include this CTA"
+        "action": "Answer a short questionnaire about your business to see if you qualify",
+        "url": "TBD",
+        "when_to_use": "Main conversion CTA — use to qualify prospects for the AI Copy Coach System install"
       },
       "secondary_ctas": [
         {
-          "action": "SECONDARY CTA",
-          "when_to_use": "When to include this"
+          "action": "Subscribe to the newsletter",
+          "when_to_use": "Top-of-funnel nurture for readers not ready to qualify yet"
+        },
+        {
+          "action": "Reply / DM to start a conversation",
+          "when_to_use": "Soft engagement CTA on social posts and emails"
         }
       ]
     },
 
     "platforms": {
-      "primary_platform": "PLATFORM - Where you're most active",
-      "secondary_platforms": ["PLATFORM 1", "PLATFORM 2"],
-      "website": "YOUR WEBSITE URL",
+      "primary_platform": "TBD",
+      "secondary_platforms": ["Instagram", "LinkedIn", "X", "Threads"],
+      "website": "TBD",
       "handles": {
-        "twitter": "@HANDLE",
-        "linkedin": "PROFILE URL",
-        "substack": "SUBSTACK URL",
-        "other": "OTHER PLATFORMS"
-      }
+        "instagram": "TBD",
+        "linkedin": "TBD",
+        "twitter": "TBD",
+        "substack": "TBD",
+        "other": "TBD"
+      },
+      "status": "Handles and website to be updated in the future"
     }
-  },
-
-  "instructions": "REPLACE ALL PLACEHOLDER TEXT (in CAPS) with your actual business information. Run the business-profile-creator skill with an interview to generate a personalized version."
+  }
 }
