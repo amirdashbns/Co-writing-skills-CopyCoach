@@ -88,48 +88,129 @@
     },
 
     "content_pillars": {
-      "basis": "Derived from market-intelligence.json (Reddit scan 2026-04-15). Each pillar maps to a documented pain point, underserved question, high-engagement debate, or content gap.",
+      "basis": "Four-pillar mix with allocation percentages, each pillar organized around specific content formulas (Educate / Relate / Inspire / Sell). Grounded in the AI-writing market sentiment from market-intelligence.json.",
+      "allocation_note": "Percentages indicate share of total content output.",
       "primary_topics": [
         {
-          "pillar": "Sound Like You, Not a Robot",
-          "theme": "The voice problem — getting AI to sound like you, not generic AI",
-          "research_basis": "#1 pain point in the scan (voice problem, HIGH, in nearly every thread); underserved question 'How do I get AI to actually sound like me?'; ICP sameness problem + voice gap",
-          "example_hooks": [
-            "Everyone sounds exactly the same now.",
-            "Your audience can smell AI content from a mile away.",
-            "You said 'write in a conversational tone' and got back a TED talk transcript."
+          "pillar": "AI Writing Done Right",
+          "color": "blue",
+          "allocation": "30%",
+          "role": "Authority pillar — the workhorse. Teach people what they're doing wrong with AI and what right looks like.",
+          "formulas": [
+            {
+              "formula": "Educate 1 — Actionable Tips",
+              "type": "Tips list",
+              "example": "5 things to stop doing when you use AI to write"
+            },
+            {
+              "formula": "Educate 2 — Expert Showcase",
+              "type": "Deep dive with examples",
+              "example": "How context engineering actually works (and why prompts don't)"
+            },
+            {
+              "formula": "Educate 3 — Value Share / Stats",
+              "type": "Fact -> truth -> tips",
+              "example": "82% of people can spot AI writing. Here's why yours gets flagged."
+            },
+            {
+              "formula": "Educate 5 — Problem Awareness",
+              "type": "Reframe the real problem",
+              "example": "The problem isn't AI. It's that you're using it without context."
+            },
+            {
+              "formula": "Sell 2 — FAQ / Objection Handling",
+              "type": "Handle objections",
+              "example": "Why 'AI can't capture my voice' is wrong (and right)"
+            }
           ]
         },
         {
-          "pillar": "Systems Beat Prompts",
-          "theme": "Context engineering vs prompt engineering — why a system beats prompt packs",
-          "research_basis": "Prompting-frustration pain point; rising belief 'prompt engineering is overrated'; content gap 'a proven, replicable system'; recommended angle 'position against the prompt template industry'",
-          "example_hooks": [
-            "You bought a prompt pack that worked for exactly 2 days.",
-            "We write prompts like Google searches instead of project briefs."
+          "pillar": "The Content System",
+          "color": "green",
+          "allocation": "25%",
+          "role": "Proof pillar — show, don't tell. Before/afters of AI slop vs. system output, behind-the-scenes of the workflow. Builds trust through evidence.",
+          "formulas": [
+            {
+              "formula": "Relate 1 — Reflections & Recaps",
+              "type": "Story of transformation",
+              "example": "I switched from prompts to context engineering. Here's what happened."
+            },
+            {
+              "formula": "Relate 3 — Behind the Scenes",
+              "type": "Process walkthrough",
+              "example": "How I made 7 days of content in 47 minutes (step by step)"
+            },
+            {
+              "formula": "Inspire 2 — Case Study",
+              "type": "Client results",
+              "example": "How [client] went from 3 hours per post to 20 minutes"
+            },
+            {
+              "formula": "Inspire 3 — Before & After",
+              "type": "Visual transformation",
+              "example": "Before/after: Generic AI copy vs. Voice DNA copy"
+            }
           ]
         },
         {
-          "pillar": "The Honest AI Math",
-          "theme": "Does AI actually save time/money? Real ROI, honest numbers, hype vs reality",
-          "research_basis": "Editing paradox (HIGH); large hype-vs-reality gap; underserved question 'Is AI content creation actually saving me time?'; content gap 'honest ROI breakdowns with real numbers'; angle 'acknowledge frustrations honestly'",
-          "example_hooks": [
-            "The $750 reality check: 20 articles, 3-5 hours each, even with AI.",
-            "Open rates dropped from 32% to 18% after going full AI."
+          "pillar": "Copywriting Principles That AI Makes Easier",
+          "color": "yellow",
+          "allocation": "20%",
+          "role": "Value pillar — positions Amir as someone who understands writing, not just AI. Give actual templates and frameworks.",
+          "formulas": [
+            {
+              "formula": "Educate 1 — Actionable Tips",
+              "type": "Tips list",
+              "example": "3 copywriting hooks that work every time (and how to get AI to write them)"
+            },
+            {
+              "formula": "Educate 3 — Value Share",
+              "type": "Fact -> truth -> tips",
+              "example": "The #1 reason your copy doesn't convert (AI or not)"
+            },
+            {
+              "formula": "Educate 4 — Plug & Play",
+              "type": "Templates / swipe files",
+              "example": "Plug-and-play CTAs for every type of post"
+            },
+            {
+              "formula": "Inspire 1 — Visualizations",
+              "type": "Future projection",
+              "example": "If you learned one copywriting principle a week for 3 months..."
+            }
           ]
         },
         {
-          "pillar": "Fire the Guru, Keep the Voice",
-          "theme": "The middle path — AI as a skilled co-writer, not a replacement and not garbage (anti-guru, anti-course)",
-          "research_basis": "High-engagement debate 'Is AI replacing copywriters?'; content gap 'the middle path: AI as skilled co-writer'; freelancer rate-collapse pain point; aligns with anti-guru / 'agency in a box' positioning",
-          "example_hooks": [
-            "AI was supposed to help freelancers. Instead it cut my $800 projects to $200.",
-            "They keep submitting AI slop."
+          "pillar": "The Anti-Guru",
+          "color": "red",
+          "allocation": "15%",
+          "role": "Personality pillar — the spicy content. Hot takes, calling out the AI hype machine, mocking 'In today's rapidly evolving landscape...'. Engagement invitations drive saves and comments.",
+          "formulas": [
+            {
+              "formula": "Educate 5 — Problem Awareness",
+              "type": "Call out BS",
+              "example": "Why 'providing value' doesn't work (and what to do instead)"
+            },
+            {
+              "formula": "Relate 2 — Story Shares",
+              "type": "Personal story with lesson",
+              "example": "I bought a $497 prompt pack. Here's what happened."
+            },
+            {
+              "formula": "Relate 4 — Engagement Invitations",
+              "type": "Interactive / fun",
+              "example": "Which AI user are you? The Prompt Hoarder, The Over-Editor, or The Delusional?"
+            },
+            {
+              "formula": "Sell 1 — The Only Option",
+              "type": "Tear down alternatives",
+              "example": "The problem with prompt packs, AI courses, and writing tools"
+            }
           ]
         }
       ],
-      "format_principle": "Show, don't tell. The scan's strongest recommendation. Because social proof is limited, lead with before/after demonstrations (generic AI output vs. voice-matched output) across every pillar — proof and content gap in one.",
-      "recurring_vehicle": "Email & the T.A.L.E. framework (Tell a story, Anchor the lesson, Link to the offer, Encourage action) used as a demonstration vehicle within all pillars rather than a standalone topic.",
+      "format_principle": "Show, don't tell. Because social proof is limited, lead with before/after demonstrations (generic AI output vs. voice-matched output), especially in The Content System pillar.",
+      "recurring_vehicle": "Email & the T.A.L.E. framework (Tell a story, Anchor the lesson, Link to the offer, Encourage action) used as a demonstration vehicle across pillars.",
       "content_mission": "Show online businesses that the problem was never AI — it was the approach. Demonstrate, in Amir's voice, that a system installed in your business beats prompts, courses, and copywriters.",
       "content_style": "Casual, punchy, contrarian. Story-driven (T.A.L.E.), paradigm shifts over how-to fluff, demonstration over claims. Entertaining first."
     },
