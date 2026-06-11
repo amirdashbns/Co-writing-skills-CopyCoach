@@ -5,22 +5,8 @@
 
     "company_overview": {
       "name": "AI Copy Coach",
-      "tagline": "A marketing agency in a box — in your voice.",
-      "tagline_options": [
-        "A marketing agency in a box — in your voice.",
-        "Install the system. Never hire a copywriter again.",
-        "AI that finally sounds like you — and actually knows your business.",
-        "Your copywriting team. Minus the team.",
-        "Stop fighting ChatGPT. Install a system that writes like you."
-      ],
-      "tagline_status": "Default set to option 1. Awaiting final selection from Amir.",
-      "mission": "We exist to end AI confusion for online businesses by installing a copywriting and marketing system that actually sounds like them — so they get real results without hiring an agency.",
-      "mission_options": [
-        "We help purpose-driven online businesses cut through AI confusion by installing a system that handles all their copywriting and marketing — in their own voice.",
-        "We exist to end AI confusion for online businesses by installing a copywriting and marketing system that actually sounds like them — so they get real results without hiring an agency.",
-        "We turn AI overwhelm into a done-for-you copywriting and marketing system, so purpose-driven businesses can create content in their own voice that actually drives results."
-      ],
-      "mission_status": "Default set to option V2. Awaiting final selection from Amir.",
+      "tagline": "Stop fighting ChatGPT. Install a system that writes like you.",
+      "mission": "We turn AI overwhelm into a done-for-you copywriting and marketing system, so purpose-driven businesses can create content in their own voice that actually drives results.",
       "vision": "In the next 5 years, help 1,000 businesses install a completely automated copywriting system that runs in their business."
     },
 
@@ -102,11 +88,48 @@
     },
 
     "content_pillars": {
+      "basis": "Derived from market-intelligence.json (Reddit scan 2026-04-15). Each pillar maps to a documented pain point, underserved question, high-engagement debate, or content gap.",
       "primary_topics": [
-        "Making AI sound human — solving the voice problem with context engineering, not prompts",
-        "Email marketing & copywriting that sells (the T.A.L.E. approach)",
-        "Anti-guru takes on AI, marketing, and overpriced courses — systems over hype"
+        {
+          "pillar": "Sound Like You, Not a Robot",
+          "theme": "The voice problem — getting AI to sound like you, not generic AI",
+          "research_basis": "#1 pain point in the scan (voice problem, HIGH, in nearly every thread); underserved question 'How do I get AI to actually sound like me?'; ICP sameness problem + voice gap",
+          "example_hooks": [
+            "Everyone sounds exactly the same now.",
+            "Your audience can smell AI content from a mile away.",
+            "You said 'write in a conversational tone' and got back a TED talk transcript."
+          ]
+        },
+        {
+          "pillar": "Systems Beat Prompts",
+          "theme": "Context engineering vs prompt engineering — why a system beats prompt packs",
+          "research_basis": "Prompting-frustration pain point; rising belief 'prompt engineering is overrated'; content gap 'a proven, replicable system'; recommended angle 'position against the prompt template industry'",
+          "example_hooks": [
+            "You bought a prompt pack that worked for exactly 2 days.",
+            "We write prompts like Google searches instead of project briefs."
+          ]
+        },
+        {
+          "pillar": "The Honest AI Math",
+          "theme": "Does AI actually save time/money? Real ROI, honest numbers, hype vs reality",
+          "research_basis": "Editing paradox (HIGH); large hype-vs-reality gap; underserved question 'Is AI content creation actually saving me time?'; content gap 'honest ROI breakdowns with real numbers'; angle 'acknowledge frustrations honestly'",
+          "example_hooks": [
+            "The $750 reality check: 20 articles, 3-5 hours each, even with AI.",
+            "Open rates dropped from 32% to 18% after going full AI."
+          ]
+        },
+        {
+          "pillar": "Fire the Guru, Keep the Voice",
+          "theme": "The middle path — AI as a skilled co-writer, not a replacement and not garbage (anti-guru, anti-course)",
+          "research_basis": "High-engagement debate 'Is AI replacing copywriters?'; content gap 'the middle path: AI as skilled co-writer'; freelancer rate-collapse pain point; aligns with anti-guru / 'agency in a box' positioning",
+          "example_hooks": [
+            "AI was supposed to help freelancers. Instead it cut my $800 projects to $200.",
+            "They keep submitting AI slop."
+          ]
+        }
       ],
+      "format_principle": "Show, don't tell. The scan's strongest recommendation. Because social proof is limited, lead with before/after demonstrations (generic AI output vs. voice-matched output) across every pillar — proof and content gap in one.",
+      "recurring_vehicle": "Email & the T.A.L.E. framework (Tell a story, Anchor the lesson, Link to the offer, Encourage action) used as a demonstration vehicle within all pillars rather than a standalone topic.",
       "content_mission": "Show online businesses that the problem was never AI — it was the approach. Demonstrate, in Amir's voice, that a system installed in your business beats prompts, courses, and copywriters.",
       "content_style": "Casual, punchy, contrarian. Story-driven (T.A.L.E.), paradigm shifts over how-to fluff, demonstration over claims. Entertaining first."
     },
