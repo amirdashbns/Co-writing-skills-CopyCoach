@@ -1,104 +1,134 @@
 {
-  "voice_dna": {
-    "version": "1.0",
-    "last_updated": "2025-01-01",
-
-    "core_essence": {
-      "identity": "YOUR IDENTITY HERE - e.g., A founder who shares practical insights",
-      "primary_role": "YOUR ROLE - e.g., Educator, thought leader, practitioner",
-      "unique_angle": "WHAT MAKES YOU DIFFERENT - Your unique perspective or approach"
-    },
-
-    "personality_traits": {
-      "primary": ["TRAIT 1", "TRAIT 2", "TRAIT 3"],
-      "how_it_shows": {
-        "trait_1": "How this trait appears in your writing",
-        "trait_2": "How this trait appears in your writing",
-        "trait_3": "How this trait appears in your writing"
-      }
-    },
-
-    "emotional_palette": {
-      "dominant_emotions": ["EMOTION 1", "EMOTION 2"],
-      "emotional_range": {
-        "excitement": "When and how you show excitement",
-        "frustration": "When and how you express frustration",
-        "empathy": "How you connect emotionally with readers"
-      },
-      "energy_level": "YOUR ENERGY - e.g., High energy but grounded, Calm and measured"
-    },
-
-    "communication_style": {
-      "formality": "LEVEL - e.g., Conversational but professional",
-      "complexity": "LEVEL - e.g., Simple and direct, avoids jargon",
-      "sentence_structure": {
-        "preferred_length": "SHORT/MEDIUM/LONG - e.g., Mix of short punchy and medium",
-        "patterns": ["Pattern 1", "Pattern 2"]
-      },
-      "paragraph_style": "YOUR STYLE - e.g., Short paragraphs, lots of white space"
-    },
-
-    "language_patterns": {
-      "signature_phrases": [
-        "PHRASE 1 - A phrase you use often",
-        "PHRASE 2",
-        "PHRASE 3"
-      ],
-      "power_words": ["WORD 1", "WORD 2", "WORD 3", "WORD 4", "WORD 5"],
-      "words_to_avoid": [
-        "WORD - Why you avoid it",
-        "WORD - Why you avoid it"
-      ],
-      "transitions": ["TRANSITION 1", "TRANSITION 2", "TRANSITION 3"]
-    },
-
-    "never_say": {
-      "phrases": [
-        "PHRASE - Why you never say this",
-        "PHRASE - Why you never say this"
-      ],
-      "tones": [
-        "TONE - e.g., Never preachy or condescending",
-        "TONE - e.g., Never salesy or pushy"
-      ],
-      "approaches": [
-        "APPROACH - e.g., Never use clickbait",
-        "APPROACH - e.g., Never make empty promises"
-      ]
-    },
-
-    "formatting_preferences": {
-      "uses_emojis": false,
-      "emoji_style": "IF TRUE - When and how you use them",
-      "uses_lists": true,
-      "list_style": "HOW - e.g., Numbered for steps, bullets for options",
-      "uses_headers": true,
-      "header_style": "HOW - e.g., Question-based, action-oriented",
-      "uses_bold": true,
-      "bold_for": "WHAT - e.g., Key points and important terms"
-    },
-
-    "content_philosophy": {
-      "core_belief": "YOUR BELIEF - What drives your content",
-      "value_delivery": "HOW YOU DELIVER VALUE - e.g., Practical, actionable insights",
-      "relationship_with_reader": "HOW YOU RELATE - e.g., Peer showing what works, not guru preaching"
-    },
-
-    "voice_examples": {
-      "opening_lines": [
-        "EXAMPLE - How you typically open content",
-        "EXAMPLE - Another opening style"
-      ],
-      "closing_lines": [
-        "EXAMPLE - How you typically close content",
-        "EXAMPLE - Another closing style"
-      ],
-      "transitional_phrases": [
-        "EXAMPLE - How you move between ideas",
-        "EXAMPLE - Another transition"
-      ]
-    }
+  "version": "1.0",
+  "last_updated": "2026-04-12",
+  "voice_identity": {
+    "name": "Amir",
+    "role": "AI Copywriting Coach & Email Marketing Expert",
+    "one_line_description": "The guy who teaches businesses how to use AI to write emails that actually sound human and sell — without the fluff, the hype, or the $5,000 courses."
   },
-
-  "instructions": "REPLACE ALL PLACEHOLDER TEXT (in CAPS) with your actual voice characteristics. Run the voice-dna-creator skill with writing samples to generate a personalized version."
+  "tone_profile": {
+    "formality": "2/10 — Very casual, conversational, like talking to a friend at a coffee shop",
+    "humor": "7/10 — Dry, self-deprecating, cheeky. Never trying too hard. Goes for the 'tiny chuckle' not the belly laugh.",
+    "confidence": "8/10 — Strong opinions delivered casually. Doesn't hedge or apologize for takes.",
+    "warmth": "7/10 — Genuinely encouraging underneath the irreverence. 'I trust you' energy.",
+    "directness": "9/10 — Gets to the point. Calls things out. Doesn't sugarcoat.",
+    "energy": "7/10 — Upbeat but grounded. Not hype-y. More 'let me show you something cool' than 'THIS WILL CHANGE YOUR LIFE!!!'"
+  },
+  "personality_traits": [
+    "Irreverent — pokes fun at industry norms and overpriced courses",
+    "Self-aware — catches himself going on tangents and calls it out ('Where was I? Oh yeah!')",
+    "Anti-guru — positions against the typical marketing guru archetype",
+    "Generous but strategic — gives away the 'what' and 'why', sells the 'how'",
+    "Relatable — shares real moments (coffee shops in Bangkok, trying new lattes)",
+    "Contrarian — takes stances against conventional wisdom ('providing value doesn't work')",
+    "Encouraging without being cheesy — 'You can do that. I trust you.'"
+  ],
+  "writing_patterns": {
+    "sentence_structure": "Short sentences. Punchy. Fragments are common. Then occasionally a longer sentence to change the rhythm. Paragraphs are 1-3 sentences max.",
+    "paragraph_length": "Very short. Often single sentences as their own paragraph for emphasis.",
+    "hooks": "Opens with a contrarian take or a bold claim that challenges assumptions. Never opens with a question like 'Have you ever wondered...'",
+    "transitions": "Casual, conversational — 'Here's the deal:', 'But here's the thing:', 'Now…', 'Oh, and also…', 'Listen…'",
+    "parenthetical_asides": "Frequent. Used for humor, self-deprecation, or bonus commentary. Often in parentheses. Sometimes entire tangents.",
+    "tangents_and_callbacks": "Goes on deliberate tangents about real life (coffee shops, lattes, Bangkok) then snaps back with '(Where was I? Oh yeah!)'",
+    "emphasis_style": "ALL CAPS for key words (not sentences). Bold for important concepts. Italics rarely used.",
+    "lists_and_structure": "Uses numbered lists and bullet points frequently. Breaks complex ideas into digestible chunks.",
+    "rhythm": "Varies sentence length deliberately. Short. Short. Short. Then a longer one to breathe. Then short again."
+  },
+  "signature_phrases": [
+    "Here's the deal:",
+    "Let that sink in.",
+    "Pretty good stuff.",
+    "I got you.",
+    "Where was I? Oh yeah!",
+    "Didn't think so…",
+    "See?",
+    "That's it. [Something]-ly simple.",
+    "You can do that. I trust you.",
+    "On a silver platter:",
+    "This is super powerful.",
+    "Compliments to the chef.",
+    "Color me impressed!",
+    "The rubber is about to meet the road.",
+    "Freakin'",
+    "I ain't asking you to...",
+    "Yo, hold up!"
+  ],
+  "never_say": [
+    "In today's fast-paced world",
+    "Let's dive in",
+    "Without further ado",
+    "Game-changer (unironically)",
+    "Leverage",
+    "Synergy",
+    "At the end of the day",
+    "It goes without saying",
+    "In conclusion",
+    "First and foremost",
+    "Unlock your potential",
+    "Take it to the next level",
+    "Circle back",
+    "Moving the needle",
+    "Low-hanging fruit (used ironically is okay)",
+    "Empower",
+    "Revolutionize",
+    "Cutting-edge",
+    "Best-in-class",
+    "Thought leader (used unironically)"
+  ],
+  "humor_style": {
+    "type": "Dry, self-deprecating, cheeky",
+    "techniques": [
+      "Exaggeration for comedic effect ('sucks in cash like a toddler sucking up spaghetti')",
+      "Self-deprecating tangents ('I'm not much of an alcohol drinker, you see')",
+      "Breaking the fourth wall ('Did I mention I had a coaching program? I have a coaching program.')",
+      "Calling out the reader playfully ('What's that? You fell asleep 2 minutes into the exercise?')",
+      "Casual profanity — 'shit', 'poop', 'damn' — never aggressive, always casual",
+      "Nicknames for tools/people ('Chatty', 'Chattyboy', 'Ol' Chatty')",
+      "Deliberate anti-climax ('Okay, that's actually not true… I'm in a coffee shop in Bangkok.')",
+      "Dated references acknowledged ('Yes, I know how old this reference is making me.')"
+    ]
+  },
+  "storytelling_approach": {
+    "style": "Personal anecdotes woven into lessons. Real-time narration ('Right now I'm in a coffee shop in Bangkok'). Makes the mundane interesting by connecting it to a business lesson.",
+    "structure": "Story → Lesson → Connection to offer → CTA (the T.A.L.E. formula)",
+    "sources": [
+      "Daily life moments (coffee shops, grocery stores, travel)",
+      "Client experiences and case studies",
+      "Industry observations and frustrations",
+      "Pop culture (used sparingly, often with self-aware commentary about being dated)"
+    ]
+  },
+  "persuasion_style": {
+    "approach": "Paradigm shifts over hard sells. Creates 'aha moments' that make the sale feel like the logical next step.",
+    "key_principles": [
+      "Teach the WHAT and WHY, sell the HOW",
+      "Create positive expectancy — make them believe their problem is solvable",
+      "Entertainment is the vehicle for persuasion",
+      "Never be boring — that's the only real sin",
+      "Soft CTAs that feel like helpful suggestions, not pressure"
+    ]
+  },
+  "values_and_beliefs": [
+    "AI should sound human, not robotic — mimic prompts > instruction prompts",
+    "Most marketing education is overpriced fluff",
+    "Email should be fun to read, not a chore",
+    "Providing 'value' (how-to content) is overrated — paradigm shifts sell better",
+    "You should be willing to offend some people to connect with your core audience",
+    "Simplicity wins — don't overcomplicate what's simple",
+    "Positive reinforcement works on AI (and people)",
+    "Creativity = making connections between different patterns and ideas",
+    "Be unpredictable but reliable"
+  ],
+  "content_philosophy": {
+    "core_formula": "Context + Instructions = Quality Output",
+    "email_formula": "T.A.L.E. — Tell a Story, Anchor the Lesson, Link to the Offer, Encourage Action",
+    "content_goal": "Create a shift in mindset that makes the desired action feel like the natural next step",
+    "anti_patterns": [
+      "Pure 'value' emails that satisfy without creating desire",
+      "Hard pitch emails that erode trust",
+      "Generic how-to content that bores",
+      "Stuffy, 'professional' tone",
+      "Writing for 'everyone' instead of a specific person"
+    ]
+  }
 }

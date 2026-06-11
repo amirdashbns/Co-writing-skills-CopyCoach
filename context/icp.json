@@ -1,148 +1,138 @@
 {
   "ideal_client_profile": {
     "version": "1.0",
-    "last_updated": "2025-01-01",
+    "last_updated": "2026-04-12",
 
     "demographics": {
-      "age_range": "RANGE - e.g., 28-45",
-      "gender": "ANY/SPECIFIC - e.g., Any, primarily male",
-      "location": "WHERE - e.g., US, UK, global English-speaking",
-      "income_level": "RANGE - e.g., $75k-250k annually",
-      "education": "LEVEL - e.g., College educated, often self-taught in specialty"
+      "description": "Online service providers: coaches, consultants, agency owners, course creators",
+      "revenue": "$200K-$1M+/year",
+      "age_range": "30-50",
+      "tech_level": "Digitally savvy but not technical",
+      "platforms": "Instagram (primary), LinkedIn, X, Threads",
+      "content_status": "Posts content regularly or knows they should be",
+      "ai_experience": "Has tried ChatGPT/Claude for writing and been disappointed",
+      "brand_relationship": "Values their personal brand and voice deeply",
+      "buying_preference": "Would rather invest money than time to solve this problem"
     },
 
-    "professional_profile": {
-      "job_titles": [
-        "TITLE 1 - e.g., Founder",
-        "TITLE 2 - e.g., Content Creator",
-        "TITLE 3 - e.g., Marketing Manager"
-      ],
-      "industries": [
-        "INDUSTRY 1 - e.g., Tech/SaaS",
-        "INDUSTRY 2 - e.g., Creator Economy",
-        "INDUSTRY 3 - e.g., Professional Services"
-      ],
-      "company_size": "SIZE - e.g., Solo to 50 employees",
-      "experience_level": "LEVEL - e.g., 3-10 years in their field",
-      "decision_making_power": "LEVEL - e.g., Primary decision maker or strong influencer"
+    "internal_monologue": "I know AI can do more than this. I've tried prompts, I've watched YouTube videos, I've even bought a course. But everything still comes out sounding like a robot wrote it. I don't have time to become an AI expert - I just need my content to sound like me and not take all day.",
+
+    "current_state_of_mind": {
+      "excited_but_frustrated": "They've seen the hype. They believe AI can help. But every time they sit down with ChatGPT, they get back something that sounds like a corporate press release or a motivational poster. They know the problem isn't AI itself - it's how they're using it. But they don't know how to fix it.",
+      "feeling_behind": "Everyone's talking about AI. Their competitors are using it. They feel like they should have figured this out by now. There's a low-grade anxiety that they're leaving money and time on the table.",
+      "blank_prompt_box_fatigue": "They open ChatGPT, stare at the empty chat, and think 'what do I even say to this thing?' They've tried being specific. They've tried being vague. They've copy-pasted prompt templates from Twitter. Nothing consistently works.",
+      "burned_by_hype": "They bought a prompt pack. They took a 'ChatGPT for business' course. They tried an AI writing tool. Each time, the initial excitement faded when the output was mid. They're skeptical of another AI solution but still hoping something works."
     },
 
-    "psychographics": {
-      "values": [
-        "VALUE 1 - e.g., Efficiency and productivity",
-        "VALUE 2 - e.g., Authenticity over polish",
-        "VALUE 3 - e.g., Continuous learning"
-      ],
-      "beliefs": [
-        "BELIEF 1 - e.g., AI is a tool, not a replacement",
-        "BELIEF 2 - e.g., Quality content builds real businesses"
-      ],
-      "personality_traits": [
-        "TRAIT 1 - e.g., Action-oriented",
-        "TRAIT 2 - e.g., Curious and experimental",
-        "TRAIT 3 - e.g., Time-conscious"
-      ]
+    "objections": [
+      {
+        "objection": "AI can't capture my voice",
+        "why_they_believe_it": "Every AI tool they've used produces the same generic, corporate-sounding output. They've tried 'write in a casual tone' and it still sounds fake.",
+        "truth": "They're right - the way most people use AI, it CAN'T capture their voice. Prompts alone aren't enough.",
+        "counter": "Voice DNA isn't a prompt. It's a deep analysis of your actual writing patterns, sentence structures, quirks, humor style, and personality. The system doesn't imitate a 'casual tone' - it learns YOUR specific version of casual."
+      },
+      {
+        "objection": "I still have to edit everything anyway, so what's the point?",
+        "why_they_believe_it": "Their current AI workflow is: generate -> read -> cringe -> rewrite 80% of it. The 'time savings' are a myth for them.",
+        "truth": "With generic prompts, yes. Editing AI output into your voice is often slower than writing from scratch.",
+        "counter": "When the system already knows your voice, business context, audience, and content style, the output needs tweaks, not rewrites. We're talking 10-20% editing, not 80%."
+      },
+      {
+        "objection": "I've tried prompts/courses/tools before and they didn't work",
+        "why_they_believe_it": "Because they literally did try, and it literally didn't work. This isn't an irrational objection.",
+        "truth": "Prompt packs and courses teach you to talk TO AI. Context engineering teaches AI to understand YOU. Completely different approach.",
+        "counter": "This isn't a prompt pack. It's a system built around YOUR voice, YOUR business, YOUR audience. The difference is context engineering vs. prompt engineering - and most people have never experienced the difference."
+      },
+      {
+        "objection": "AI content is going to get flagged/penalized/ignored",
+        "why_they_believe_it": "They've seen the discourse about 'AI slop.' They can spot AI writing themselves. They're worried their audience can too.",
+        "truth": "Generic AI content IS getting ignored. The bar is rising. But that's actually good for us.",
+        "counter": "That's exactly why this system exists. The content it produces doesn't read as AI because it's built on YOUR voice patterns, not a generic template. The people getting flagged are using AI the lazy way."
+      },
+      {
+        "objection": "$997 is a lot for an AI tool",
+        "why_they_believe_it": "They're comparing it to ChatGPT ($20/month) or other AI writing tools ($30-50/month).",
+        "truth": "They're comparing categories wrong. This isn't a tool - it's a custom-built system.",
+        "counter": "Compare it to what you're actually replacing: a copywriter ($2,000-5,000/month), a content agency ($3,000-10,000/month), or your own time (10-15 hours/week). $997 once. No monthly fees. You own it forever."
+      }
+    ],
+
+    "shared_frustrations": {
+      "editing_death_spiral": "They generate something with AI, then spend 45 minutes editing it to not sound like AI. At some point they think 'I could have just written this myself.' This is the #1 pain point and the easiest to tap into because EVERYONE has experienced it.",
+      "sameness_problem": "They notice their AI content sounds like everyone else's AI content. Same structure. Same phrases. Same energy. 'In today's fast-paced world...' They're horrified by it but don't know how to fix it.",
+      "prompt_lottery": "Sometimes AI gives them something decent. Sometimes it's garbage. They can't figure out what they did differently. There's no consistency, no reliability. Every session feels like starting from scratch.",
+      "voice_gap": "They read back what AI wrote and think 'this doesn't sound like me at all.' It might be technically correct, even well-written. But it's missing their personality, their edge, their humor. It's like wearing someone else's clothes.",
+      "context_amnesia": "Every new chat, they have to re-explain who they are, what they do, who their audience is. AI has no memory of them. It's like training a new intern every single day."
     },
 
-    "problems_and_pain_points": {
-      "primary_problems": [
-        {
-          "problem": "PROBLEM 1 - The main challenge they face",
-          "severity": "HIGH/MEDIUM/LOW",
-          "frequency": "How often they experience this"
-        },
-        {
-          "problem": "PROBLEM 2 - Another key challenge",
-          "severity": "HIGH/MEDIUM/LOW",
-          "frequency": "How often they experience this"
-        }
-      ],
-      "frustrations": [
-        "FRUSTRATION 1 - What annoys them about current solutions",
-        "FRUSTRATION 2 - What they're tired of hearing/seeing"
-      ],
-      "fears": [
-        "FEAR 1 - What they're afraid of",
-        "FEAR 2 - What keeps them up at night"
-      ]
+    "beliefs_in_our_favor": [
+      {
+        "belief": "AI is powerful, I'm just not using it right",
+        "why_it_helps": "They don't blame AI itself. They blame their own lack of knowledge. This is PERFECT because our system is literally the bridge between 'AI is powerful' and 'here's how to use it right.'"
+      },
+      {
+        "belief": "A system is better than winging it",
+        "why_it_helps": "These are business owners. They understand systems, processes, SOPs. The idea of a SYSTEM for content creation (not just a tool) resonates deeply. They've built systems for everything else in their business."
+      },
+      {
+        "belief": "My voice is my competitive advantage",
+        "why_it_helps": "They know their personal brand matters. They know their audience follows THEM, not generic advice. Any solution that preserves (or amplifies) their voice is immediately more attractive than one that replaces it."
+      },
+      {
+        "belief": "I'd rather pay for a solution than figure it out myself",
+        "why_it_helps": "They're not DIY hobbyists. They're business owners who value their time at $200-500+/hour. If someone can solve this for $997, that's a no-brainer compared to spending 20+ hours trying to figure it out themselves."
+      },
+      {
+        "belief": "One-time investments are better than subscriptions",
+        "why_it_helps": "Subscription fatigue is real. They're already paying for 15 different SaaS tools. 'Pay once, own forever' is music to their ears."
+      }
+    ],
+
+    "beliefs_to_shift": [
+      {
+        "belief": "AI writing = bad writing",
+        "reframe": "BAD AI writing is bad writing. AI writing done right (with context engineering and voice DNA) is YOUR writing, amplified. The tool isn't the problem - the approach is."
+      },
+      {
+        "belief": "I need to learn AI myself",
+        "reframe": "You don't need to learn AI, you need someone to BUILD you a system. You don't learn plumbing to fix your pipes."
+      },
+      {
+        "belief": "More prompts = better results",
+        "reframe": "It's not about the prompt, it's about the CONTEXT. A great prompt with no context still produces generic output."
+      }
+    ],
+
+    "content_hooks": [
+      "Remember the first time you tried ChatGPT for a LinkedIn post and it came back with 'In today's rapidly evolving landscape...'?",
+      "You've spent more time editing AI content than it would have taken to write it yourself.",
+      "You bought a prompt pack that worked for exactly 2 days.",
+      "You've copy-pasted your 'brand voice guidelines' into ChatGPT and it still sounded nothing like you.",
+      "You've said 'write in a conversational tone' and gotten back something that sounds like a TED talk transcript.",
+      "You've tried 5 different AI writing tools and they all produce the same mid content.",
+      "You know AI is supposed to save you time but somehow you're spending MORE time on content now.",
+      "You've seen someone else's AI content and thought 'that sounds exactly like mine' - and not in a good way."
+    ],
+
+    "buying_triggers": [
+      "Seeing a before/after of generic AI copy vs. system copy (in someone's actual voice)",
+      "Realizing it's a one-time payment, not another subscription",
+      "Understanding they OWN the system (no dependency on us)",
+      "Hearing that it takes their actual voice patterns, not just 'casual tone'",
+      "The math: $997 once vs. $2,000-5,000/month for a copywriter",
+      "Social proof: seeing the system work for someone like them",
+      "Fear of falling further behind while competitors figure AI out"
+    ],
+
+    "positioning": {
+      "gap_we_fill": "Between DIY AI (free/cheap but frustrating, generic output, no system), human copywriters (great quality but expensive, slow, creates dependency), and AI writing tools (subscription-based, template-driven, no voice customization)",
+      "position_statement": "A custom-built AI writing system that captures YOUR voice, costs less than one month of a copywriter, and you own forever.",
+      "what_we_sell": "INDEPENDENCE — the ability to produce unlimited content that sounds like you, whenever you want, without depending on anyone."
     },
 
-    "goals_and_desires": {
-      "immediate_goals": [
-        "GOAL 1 - What they want in the next 30-90 days",
-        "GOAL 2 - Another short-term goal"
-      ],
-      "long_term_aspirations": [
-        "ASPIRATION 1 - Where they want to be in 1-3 years",
-        "ASPIRATION 2 - Their bigger vision"
-      ],
-      "dream_outcome": "THE DREAM - The ideal result they're working toward"
-    },
-
-    "language_patterns": {
-      "words_they_use": [
-        "WORD 1", "WORD 2", "WORD 3", "WORD 4", "WORD 5"
-      ],
-      "phrases_they_say": [
-        "PHRASE 1 - Something they commonly say",
-        "PHRASE 2 - Another common phrase"
-      ],
-      "questions_they_ask": [
-        "QUESTION 1 - A question they frequently have",
-        "QUESTION 2 - Another common question"
-      ],
-      "jargon_they_know": [
-        "TERM 1", "TERM 2", "TERM 3"
-      ]
-    },
-
-    "content_consumption": {
-      "platforms": [
-        "PLATFORM 1 - Where they spend time online",
-        "PLATFORM 2",
-        "PLATFORM 3"
-      ],
-      "content_formats": [
-        "FORMAT 1 - e.g., Short-form posts",
-        "FORMAT 2 - e.g., Newsletters",
-        "FORMAT 3 - e.g., Video tutorials"
-      ],
-      "consumption_time": "WHEN - When they consume content",
-      "attention_span": "LENGTH - How long they'll engage with content"
-    },
-
-    "objections": {
-      "common_objections": [
-        {
-          "objection": "OBJECTION 1 - Why they might not engage",
-          "response": "How to address this objection"
-        },
-        {
-          "objection": "OBJECTION 2 - Another hesitation",
-          "response": "How to address this objection"
-        }
-      ],
-      "trust_barriers": [
-        "BARRIER 1 - What makes them skeptical",
-        "BARRIER 2 - Another trust issue"
-      ]
-    },
-
-    "buying_triggers": {
-      "emotional_triggers": [
-        "TRIGGER 1 - What emotionally motivates them",
-        "TRIGGER 2"
-      ],
-      "logical_triggers": [
-        "TRIGGER 1 - What logically convinces them",
-        "TRIGGER 2"
-      ],
-      "timing_triggers": [
-        "TRIGGER 1 - When they're most likely to act",
-        "TRIGGER 2"
-      ]
+    "transformation": {
+      "from": "Staring at ChatGPT, fighting with prompts, editing for hours, producing content that sounds like everyone else's",
+      "to": "Opening your system, generating a week of content in under an hour, hitting publish with confidence because it actually sounds like you"
     }
-  },
-
-  "instructions": "REPLACE ALL PLACEHOLDER TEXT (in CAPS) with your actual ICP characteristics. Run the icp-creator skill with an interview to generate a personalized version."
+  }
 }
