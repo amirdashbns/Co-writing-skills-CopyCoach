@@ -88,6 +88,7 @@ Located in `/.claude/skills/`, these are packaged expertise for specific content
 | Skill | Triggers When | Output |
 |-------|--------------|--------|
 | **linkedin-post** | "LinkedIn post", "post for LinkedIn" | Single LinkedIn post with hook, body, CTA |
+| **instagram-carousel** | "Instagram carousel", "IG post", "carousel" | Carousel slides + matching caption |
 | **twitter-thread** | "Twitter thread", "thread", "tweets" | 7-15 tweet thread |
 | **substack-note** | "Substack note", "notes" | Short-form Substack content |
 | **thought-leadership** | "thought piece", "article", "essay" | Long-form content (1000-5000 words) |
@@ -119,6 +120,7 @@ Located in `/knowledge/`, this contains reference material:
 | `notes/` | Ideas, research, outlines | Looking for inspiration or data |
 | `archive/` | Published content | Repurposing or maintaining consistency |
 | `research/` | Reddit scans, market intelligence reports | Understanding audience, finding content ideas |
+| `frameworks/` | Reusable content frameworks (e.g. `instagram-content/`) | Skills that need shared templates/formulas |
 
 ---
 
