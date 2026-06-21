@@ -1,0 +1,177 @@
+{
+  "core_lessons": {
+    "version": "1.0",
+    "last_updated": "2026-06-21",
+
+    "what_this_is": "The recurring counter-industry-norm ideas Amir teaches over and over to position himself as unique AND bust the myths keeping prospects from buying. These are the 'big ideas' that fuel content — each piece of content should deliver ONE of these as its paradigm shift / 'aha' moment. Source: Amir's 'Email Mimic Prompts' guide, 'Your Core Lessons' section.",
+
+    "how_each_lesson_works": "Every core lesson does one (usually both) of two jobs: (1) Establish Amir's unique position in the market, and/or (2) Bust a myth/wrong belief that's holding the prospect back from buying.",
+
+    "how_to_use": "When writing paradigm-shift content (emails, Problem Awareness / Turning Point / Value Share / Self-Selection / FAObjection posts), anchor the piece on ONE core lesson. Teach the 'what' and 'why' of the lesson; sell the 'how' (the offer). Don't force a lesson onto pure plug-and-play lists or behind-the-scenes content.",
+
+    "lessons": [
+      {
+        "id": 1,
+        "lesson": "\"Good enough\" copy isn't good enough anymore",
+        "function": "both",
+        "industry_norm_it_counters": "AI lets you pump out 'good enough' content at scale, and volume wins",
+        "the_myth_or_why_norm_is_wrong": "In a sea of AI-generated robocontent, 'good enough' is invisible. The bar didn't drop — it rose. People are starving for human connection, and mediocre copy won't cut it much longer.",
+        "the_aha": "The flood of generic AI content is the opportunity. When everyone sounds the same, sounding like a human is the unfair advantage.",
+        "deeper_truth": "Sameness is the enemy. Distinctiveness is the moat.",
+        "audience_belief_it_shifts": "AI content is going to get flagged/ignored — sameness problem",
+        "ladders_to_offer": "A voice-matched system that makes you the human in the feed of robots",
+        "one_liners": [
+          "Everyone's using the same AI playbook. That's exactly why it's not working anymore.",
+          "'Good enough' is the most expensive content you can publish. It costs you the click.",
+          "In a feed full of robots, sounding human is a superpower."
+        ]
+      },
+      {
+        "id": 2,
+        "lesson": "ChatGPT learns by example, not by explanation",
+        "function": "both",
+        "industry_norm_it_counters": "Write better prompts. Add more adjectives, modifiers, and instructions to get your voice.",
+        "the_myth_or_why_norm_is_wrong": "All the 'explaining' in the world — every adjective and guideline — won't make AI write in your voice. It learns best by example. Mimic prompts (feeding it your actual writing) do what instructions can't.",
+        "the_aha": "Stop describing your voice to the AI. Show it. Paste your real writing and let it study you.",
+        "deeper_truth": "Context (examples of YOU) beats instructions every time. Mimic prompts > instruction prompts.",
+        "audience_belief_it_shifts": "More prompts = better results / AI can't capture my voice",
+        "ladders_to_offer": "The mimic-prompt method and voice-DNA system",
+        "one_liners": [
+          "You can't adjective your way to your own voice. Show it, don't describe it.",
+          "AI doesn't learn from your instructions. It learns from your examples.",
+          "Stop collecting prompts. Start feeding it YOU."
+        ]
+      },
+      {
+        "id": 3,
+        "lesson": "Most AI copywriting advice misses the point completely",
+        "function": "positioning",
+        "industry_norm_it_counters": "The endless 'steal my 500 ChatGPT prompts' / prompt-pack content everywhere online",
+        "the_myth_or_why_norm_is_wrong": "Most of it is absolute poop. It's all about clever prompts and tricks, and it skips the one thing that actually matters: feeding the AI your voice and context.",
+        "the_aha": "The reason your AI content sucks isn't that you have the wrong prompts. It's that everyone taught you to focus on the wrong thing.",
+        "deeper_truth": "Prompt engineering is a distraction. Context engineering is the game.",
+        "audience_belief_it_shifts": "I've tried prompts/courses/tools and they didn't work",
+        "ladders_to_offer": "Amir's approach as the contrarian, correct alternative",
+        "one_liners": [
+          "99% of AI copywriting advice is teaching you to polish the wrong thing.",
+          "The prompt-pack industry sold you tricks. You needed a system.",
+          "If better prompts were the answer, you'd have your voice by now."
+        ]
+      },
+      {
+        "id": 4,
+        "lesson": "AI can be MORE creative than you, not less",
+        "function": "myth-bust",
+        "industry_norm_it_counters": "AI kills creativity / AI can only produce generic, soulless work",
+        "the_myth_or_why_norm_is_wrong": "Creativity is making connections between different patterns and ideas — and that's exactly what AI is great at. Used right, it's a creativity amplifier, not a creativity killer.",
+        "the_aha": "AI isn't the enemy of your creativity. With the right inputs, it's the fastest brainstorm partner you've ever had.",
+        "deeper_truth": "Creativity = connecting patterns. That's a strength of AI, not a weakness.",
+        "audience_belief_it_shifts": "AI writing = bad writing",
+        "ladders_to_offer": "The idea-generation / 'infinite ideas' method",
+        "one_liners": [
+          "AI doesn't kill creativity. Bad inputs do.",
+          "Creativity is just connecting dots. Guess what's great at connecting dots?",
+          "The blank page problem dies the day you learn to use AI right."
+        ]
+      },
+      {
+        "id": 5,
+        "lesson": "Secondary rewards are what make writing fun to read",
+        "function": "positioning",
+        "industry_norm_it_counters": "Just deliver clear information / value, and the writing will work",
+        "the_myth_or_why_norm_is_wrong": "Information alone is boring. Idioms, metaphors, personal stories, rhythm, alliteration — the 'secondary rewards' — are what make content read well and actually entertain your audience.",
+        "the_aha": "People don't keep reading because your info is good. They keep reading because it's fun.",
+        "deeper_truth": "Entertainment is the vehicle for persuasion. Never be boring — it's the only real sin.",
+        "audience_belief_it_shifts": "Good content = informative content",
+        "ladders_to_offer": "The 'secondary rewards' editing prompt and T.A.L.E. method",
+        "one_liners": [
+          "Nobody ever bought because your tutorial was thorough.",
+          "Boring is the only unforgivable sin in copy.",
+          "Information informs. Rhythm and story persuade."
+        ]
+      },
+      {
+        "id": 6,
+        "lesson": "Most multi-thousand-dollar courses are overpriced fluff",
+        "function": "both",
+        "industry_norm_it_counters": "Premium = expensive. The $5,000 mastermind / $300-a-month membership is how you learn this.",
+        "the_myth_or_why_norm_is_wrong": "Most are stuffed with fluff to justify the price, and designed around the coach's business interests, not yours. Learning AI copywriting is actually simple — there's no need to over-complicate it.",
+        "the_aha": "The high price tag isn't a signal of quality. It's often a signal of padding.",
+        "deeper_truth": "Simplicity wins. Most education is overpriced fluff dressed up to look hard.",
+        "audience_belief_it_shifts": "$997 is a lot / I need an expensive program to learn this",
+        "ladders_to_offer": "Amir's accessible, no-fluff coaching positioned against $15K masterminds",
+        "one_liners": [
+          "If it takes 40 hours of 'modules' to teach, it's padded on purpose.",
+          "You're not paying for the knowledge. You're paying for the fluff that hides how simple it is.",
+          "Big price tags hide small ideas."
+        ]
+      },
+      {
+        "id": 7,
+        "lesson": "You learn copywriting by DOING, not by consuming",
+        "function": "both",
+        "industry_norm_it_counters": "Buy the course, watch the calls, consume the modules and you'll learn copy",
+        "the_myth_or_why_norm_is_wrong": "You don't learn to write by listening to someone talk about writing. You learn by writing, getting feedback, and doing it again. Email coaching (do homework, get feedback) beats info-dump courses.",
+        "the_aha": "Every course you've bought failed you for the same reason: it gave you information when you needed reps.",
+        "deeper_truth": "Skill comes from practice + feedback, not from consumption.",
+        "audience_belief_it_shifts": "I need more information / another course to get good",
+        "ladders_to_offer": "Amir's feedback-based email coaching program",
+        "one_liners": [
+          "You don't learn to box by watching boxing.",
+          "Information isn't the bottleneck. Reps and feedback are.",
+          "Another course won't fix what only practice can."
+        ]
+      },
+      {
+        "id": 8,
+        "lesson": "Talk to AI like a person, not like you're writing code",
+        "function": "myth-bust",
+        "industry_norm_it_counters": "Prompting is a technical skill — learn the syntax, the formulas, the 'prompt engineering'",
+        "the_myth_or_why_norm_is_wrong": "The best way to get what you want from AI is to talk to it like an assistant — a person. Positive reinforcement ('Good job!', 'I trust you') genuinely gets better results. It's not code.",
+        "the_aha": "You don't need to learn a programming language. You already know how to brief an assistant — just do that.",
+        "deeper_truth": "AI responds to human communication, including encouragement. Treat it like a smart intern, not a compiler.",
+        "audience_belief_it_shifts": "I need to learn AI / become technical to use it well",
+        "ladders_to_offer": "The conversational prompting approach Amir teaches",
+        "one_liners": [
+          "Stop coding your prompts. Start briefing your intern.",
+          "Yes, saying 'good job' to ChatGPT actually works. I don't make the rules.",
+          "If you can brief an assistant, you can prompt AI."
+        ]
+      },
+      {
+        "id": 9,
+        "lesson": "Be willing to offend some people to connect with your core audience",
+        "function": "positioning",
+        "industry_norm_it_counters": "Stay safe, stay broad, don't alienate anyone — appeal to everyone",
+        "the_myth_or_why_norm_is_wrong": "Writing for 'everyone' connects with no one. Taking a real stance is what builds genuine connection with the people who matter. If nobody disagrees, nobody deeply agrees either.",
+        "the_aha": "The fear of offending the wrong people is what's keeping you invisible to the right ones.",
+        "deeper_truth": "Take a stance. Polarize a little. That's what makes you worth following.",
+        "audience_belief_it_shifts": "I should keep my content safe and broad",
+        "ladders_to_offer": "Amir's opinionated, anti-guru positioning as proof it works",
+        "one_liners": [
+          "If your content offends no one, it moves no one.",
+          "Writing for everyone is how you become no one.",
+          "A point of view that can't lose followers can't earn fans."
+        ]
+      },
+      {
+        "id": 10,
+        "lesson": "Teach the 'what' and 'why'. Sell the 'how'.",
+        "function": "both",
+        "industry_norm_it_counters": "Provide value! Give away the how-to, build trust, and the sale follows.",
+        "the_myth_or_why_norm_is_wrong": "If you hand someone the complete how-to, the logical next step is to go do it themselves (which they won't), not to buy from you. 'Value' emails leave people briefly satisfied but not hungry for more.",
+        "the_aha": "Giving away the 'how' doesn't build desire — it kills it. Hold the 'how', and the offer becomes the natural next step.",
+        "deeper_truth": "Paradigm shifts sell better than how-to. Create the mindset shift; the offer delivers the execution.",
+        "audience_belief_it_shifts": "More 'value' / how-to content = more sales",
+        "ladders_to_offer": "The T.A.L.E. formula and Amir's presell philosophy",
+        "one_liners": [
+          "Giving away the how-to is like giving someone a full meal and trying to sell them dinner.",
+          "Value emails satisfy. Paradigm shifts sell.",
+          "Teach why it matters. Sell how to do it."
+        ]
+      }
+    ],
+
+    "instructions": "These are Amir's starter core lessons, drafted from his 'Email Mimic Prompts' guide. Add, edit, or refine over time. To generate a set from scratch (for a new client or a new market), run the core-lessons-creator skill."
+  }
+}
