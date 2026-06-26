@@ -80,7 +80,9 @@ Use `caption-templates.md` (match the same bucket; pick by the "to use when" pur
 - **Hashtags:** suggest 3-5, mixing popular + niche-specific based on the topic.
 
 ### Phase 8 — Emit Canva Bulk Create data table
-Read `canva-template-setup.md` for the full field map. After the carousel copy is final, map it to the **cream theme 10-slide template** and output a paste-ready data table.
+Read `canva-template-setup.md` for the full field map. The **carousel copy (steps 1–6) is the source of truth** — write it fully, with no regard for text-box size. Phase 8 *maps* that copy into Canva fields; it does not rewrite or shorten it.
+
+**Words over design:** If an idea needs room, split it across `P1` + `P2`, or use another body slide (`Body6`, `Body7`). Prefer more slides over cramped fields. The template should be sized for the writing (see word-first template guide in `canva-template-setup.md`) — copy is never the thing that yields.
 
 **Template layout:** 1 title + up to 7 body slides + 1 takeaway + 1 CTA. Map carousel slides as follows:
 - Carousel Slide 1 → Title fields (`Title_Line1`, `Title_Highlight`, `Title_Line2`, `Title_Line3`)
@@ -93,8 +95,8 @@ Read `canva-template-setup.md` for the full field map. After the carousel copy i
 - Map each body slide: heading → `Body{N}_Heading`, first body block → `Body{N}_P1`, second block → `Body{N}_P2` (blank if unused), audience qualifier → `Body{N}_PerfectIf` (text only — "Perfect if:" label is in the template).
 - Put the pink accent word(s) in `Takeaway_Accent` and `CTA_Keyword`.
 - Leave unused `Body{N}_*` columns empty (user deletes blank slides in Canva after generate).
-- **Hard char limits:** Canva does NOT auto-shrink text. Every field must stay within the char guides in `canva-template-setup.md` — trim ruthlessly. If copy is too long, split across `P1` + `P2` or add a body slide; never overflow one box.
-- No commas inside field values (breaks CSV paste) — use semicolons or rephrase if needed.
+- **Map, don't trim:** carry the full carousel wording into the table. Split long blocks across fields/slides; do not cut sentences to fit soft char refs.
+- No commas inside field values (breaks CSV paste) — use semicolons or rephrase punctuation only if needed for CSV format, not for length.
 - Wrap the table in a `csv` code block using the exact column order from `canva-template-setup.md`.
 
 **After the table, include a one-line reminder:** Open Canva template → Apps → Bulk Create → paste table → Generate → delete unused body slides → export.
@@ -121,7 +123,7 @@ Before delivering, verify:
 - [ ] **Caption:** does NOT repeat the slides; has a hook and a clear CTA
 - [ ] **CTA:** specific, with a natural lead-in; offer context given if referenced
 - [ ] ≤ 10 slides
-- [ ] **Canva table:** all 41 columns present; field names match `canva-template-setup.md`; unused body slots blank; no commas inside values
+- [ ] **Canva table:** all 41 columns present; field names match `canva-template-setup.md`; full carousel copy mapped (split across fields, not shortened); unused body slots blank
 
 ## Notes
 - Carousels suit Educate/Relate/Inspire/Sell content built around words. For highly visual/real-time content, a reel may fit better — but every formula here also works as a reel script outline.
