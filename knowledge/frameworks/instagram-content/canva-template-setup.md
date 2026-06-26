@@ -21,10 +21,10 @@ When connecting data in Canva, each text box must use these field names. The ski
 
 | Field | Purpose | Char guide |
 |-------|---------|------------|
-| `Title_Line1` | Opening phrase | ≤ 15 |
-| `Title_Highlight` | Pink-pill emphasis (number, power word, or hook word) | ≤ 12 |
-| `Title_Line2` | Middle line | ≤ 15 |
-| `Title_Line3` | Closing line | ≤ 15 |
+| `Title_Line1` | Opening phrase | ≤ 12 |
+| `Title_Highlight` | Pink-pill emphasis (number, power word, or hook word) | ≤ 10 |
+| `Title_Line2` | Middle line | ≤ 12 |
+| `Title_Line3` | Closing line | ≤ 12 |
 
 **Splitting the title:** Pick the most clickable word/phrase for `Title_Highlight` — a number, timeframe, or power word. Example: *"Stop Wasting Hours on Generic AI Posts"* → Line1: `Stop Wasting`, Highlight: `Hours`, Line2: `on Generic AI`, Line3: `Posts`.
 
@@ -34,10 +34,10 @@ Each body slide uses four fields:
 
 | Field | Purpose | Char guide |
 |-------|---------|------------|
-| `Body{N}_Heading` | Slide heading (serif display) | ≤ 60 |
-| `Body{N}_P1` | First body paragraph | ≤ 120 |
-| `Body{N}_P2` | Second paragraph (optional — leave blank if not needed) | ≤ 120 |
-| `Body{N}_PerfectIf` | Yellow callout text **after** "Perfect if:" (label stays in template) | ≤ 80 |
+| `Body{N}_Heading` | Slide heading (serif display) | ≤ 45 |
+| `Body{N}_P1` | First body paragraph | ≤ 70 |
+| `Body{N}_P2` | Second paragraph (optional — leave blank if not needed) | ≤ 70 |
+| `Body{N}_PerfectIf` | Yellow callout text **after** "Perfect if:" (label stays in template) | ≤ 55 |
 
 **Mapping carousel copy to body fields:**
 - Formula "heading" → `Body{N}_Heading`
@@ -51,10 +51,10 @@ Keep early body slides light (short heading + one line). Use `P2` on meatier mid
 
 | Field | Purpose | Char guide |
 |-------|---------|------------|
-| `Takeaway_L1` | First line (black) | ≤ 20 |
-| `Takeaway_Accent` | Pink emphasis word(s) | ≤ 15 |
-| `Takeaway_L2` | Next line(s) | ≤ 25 |
-| `Takeaway_L3` | Final line (optional) | ≤ 25 |
+| `Takeaway_L1` | First line (black) | ≤ 15 |
+| `Takeaway_Accent` | Pink emphasis word(s) | ≤ 12 |
+| `Takeaway_L2` | Next line(s) | ≤ 18 |
+| `Takeaway_L3` | Final line (optional) | ≤ 18 |
 
 `@YOURHANDLEHERE` stays static in the template — do not include in the data table.
 
@@ -66,11 +66,35 @@ Keep early body slides light (short heading + one line). Use `P2` on meatier mid
 | `CTA_Step1` | First instruction | ≤ 25 |
 | `CTA_Step2_Prefix` | Text before the keyword | ≤ 20 |
 | `CTA_Keyword` | Pink highlighted comment keyword | ≤ 15 |
-| `CTA_Step2_Suffix` | Text after the keyword | ≤ 60 |
+| `CTA_Step2_Suffix` | Text after the keyword | ≤ 45 |
 
 Example: `2) COMMENT '` + `VOICE` + `' TO GET MY FREE AI VOICE GUIDE`
 
 The product mockup at the bottom of the CTA slide is decorative — swap the image manually in Canva if promoting a different lead magnet.
+
+## Text overflow — fix in the template (one-time)
+
+Canva Bulk Create **does not auto-shrink font size**. If copy is longer than the placeholder text, boxes overlap.
+
+**Size your template using MAX-length dummy text**, not the short stock phrases from the pack. Paste these into each connected box, then resize boxes / reduce font until nothing overlaps:
+
+| Field type | Max-length test string |
+|------------|-------------------------|
+| Title lines | `Stop Wasting` / `Hours` / `on Generic` / `AI Posts` |
+| Body heading | `Why your ChatGPT prompts still sound generic` |
+| Body P1 / P2 | `Paste your real writing first. Then ask for the new thing. Context beats instructions every time.` |
+| PerfectIf | `You have been tweaking prompts for months and still sound robotic` |
+| Takeaway lines | `STOP COLLECTING` / `PROMPTS.` / `START FEEDING IT` / `YOUR WRITING.` |
+| CTA suffix | `' TO GET MY FREE AI VOICE GUIDE` |
+
+**In Canva after connecting fields:**
+1. Click each text box → drag the side handles to make boxes **taller/wider**
+2. Select all body text → drop font size slightly (e.g. 28 → 24)
+3. Text menu → **Advanced** → set **Anchor** so boxes grow downward, not into each other
+4. Ungroup any grouped text+shapes before connecting data
+5. Generate a test row → fix overflow once → save as template
+
+**In the skill:** write shorter than the char guides above. If a thought is too long, split it across `P1` + `P2` or use two body slides — never overflow one field.
 
 ## Bulk Create workflow
 

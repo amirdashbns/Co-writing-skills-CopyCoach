@@ -93,7 +93,7 @@ Read `canva-template-setup.md` for the full field map. After the carousel copy i
 - Map each body slide: heading → `Body{N}_Heading`, first body block → `Body{N}_P1`, second block → `Body{N}_P2` (blank if unused), audience qualifier → `Body{N}_PerfectIf` (text only — "Perfect if:" label is in the template).
 - Put the pink accent word(s) in `Takeaway_Accent` and `CTA_Keyword`.
 - Leave unused `Body{N}_*` columns empty (user deletes blank slides in Canva after generate).
-- Respect char guides in `canva-template-setup.md`; trim copy to fit rather than overflow the template.
+- **Hard char limits:** Canva does NOT auto-shrink text. Every field must stay within the char guides in `canva-template-setup.md` — trim ruthlessly. If copy is too long, split across `P1` + `P2` or add a body slide; never overflow one box.
 - No commas inside field values (breaks CSV paste) — use semicolons or rephrase if needed.
 - Wrap the table in a `csv` code block using the exact column order from `canva-template-setup.md`.
 
