@@ -17,6 +17,7 @@ This skill reads from a shared framework library at `/knowledge/frameworks/insta
 - `caption-templates.md` — caption structures by bucket
 - `plug-and-play-ctas.md` — CTA library
 - `power-word-bank.md` — power words/phrases by emotion
+- `canva-template-setup.md` — Canva Bulk Create field names, column order, and workflow
 
 And the context profiles in `/context/` (including `core-lessons.json` — the user's unique POVs). If you ever relocate this skill, move or re-point the framework library with it.
 
@@ -75,9 +76,28 @@ Pick from `plug-and-play-ctas.md` matched to the goal (offer, lead, engagement).
 ### Phase 6 — Write the caption
 Use `caption-templates.md` (match the same bucket; pick by the "to use when" purpose). The caption must **NOT repeat the slides** — expand on them, tell a story behind them, add a fresh angle, or at minimum say it differently. Hook first line, CTA last, 3-4 keyword mentions for caption SEO.
 
-### Phase 7 — Add design direction + hashtags
-- **Design notes per slide:** brief layout guidance — e.g. "Slide 1: big bold title, minimal text; Slides 2-3: heading + one-line subheading; Slide 9: standalone shareable takeaway." Remind: left-aligned, dark text on light background, easy-to-read font, ample white space + margins, contrast in font sizes.
+### Phase 7 — Add hashtags
 - **Hashtags:** suggest 3-5, mixing popular + niche-specific based on the topic.
+
+### Phase 8 — Emit Canva Bulk Create data table
+Read `canva-template-setup.md` for the full field map. After the carousel copy is final, map it to the **cream theme 10-slide template** and output a paste-ready data table.
+
+**Template layout:** 1 title + up to 7 body slides + 1 takeaway + 1 CTA. Map carousel slides as follows:
+- Carousel Slide 1 → Title fields (`Title_Line1`, `Title_Highlight`, `Title_Line2`, `Title_Line3`)
+- Carousel body slides → `Body1_` through `Body7_` (one body slot per carousel slide; stop when body ends)
+- Penultimate carousel slide (big takeaway) → Takeaway fields (`Takeaway_L1`, `Takeaway_Accent`, `Takeaway_L2`, `Takeaway_L3`)
+- Final carousel slide (CTA) → CTA fields (`CTA_Question`, `CTA_Step1`, `CTA_Step2_Prefix`, `CTA_Keyword`, `CTA_Step2_Suffix`)
+
+**Field mapping rules:**
+- Split the title so the most clickable word/phrase lands in `Title_Highlight` (number, timeframe, or power word).
+- Map each body slide: heading → `Body{N}_Heading`, first body block → `Body{N}_P1`, second block → `Body{N}_P2` (blank if unused), audience qualifier → `Body{N}_PerfectIf` (text only — "Perfect if:" label is in the template).
+- Put the pink accent word(s) in `Takeaway_Accent` and `CTA_Keyword`.
+- Leave unused `Body{N}_*` columns empty (user deletes blank slides in Canva after generate).
+- Respect char guides in `canva-template-setup.md`; trim copy to fit rather than overflow the template.
+- No commas inside field values (breaks CSV paste) — use semicolons or rephrase if needed.
+- Wrap the table in a `csv` code block using the exact column order from `canva-template-setup.md`.
+
+**After the table, include a one-line reminder:** Open Canva template → Apps → Bulk Create → paste table → Generate → delete unused body slides → export.
 
 ## Output Format
 
@@ -86,7 +106,7 @@ Deliver:
 2. **The carousel** — each slide numbered, labeled by purpose, with the copy
 3. **2-3 alternative Slide 1 titles**
 4. **The caption** (with hook + CTA)
-5. **Design direction** (per-slide notes)
+5. **Canva Bulk Create table** — single-row CSV with all 41 fields (see `canva-template-setup.md`)
 6. **Hashtags** (3-5)
 
 ## Quality Checklist
@@ -101,6 +121,7 @@ Before delivering, verify:
 - [ ] **Caption:** does NOT repeat the slides; has a hook and a clear CTA
 - [ ] **CTA:** specific, with a natural lead-in; offer context given if referenced
 - [ ] ≤ 10 slides
+- [ ] **Canva table:** all 41 columns present; field names match `canva-template-setup.md`; unused body slots blank; no commas inside values
 
 ## Notes
 - Carousels suit Educate/Relate/Inspire/Sell content built around words. For highly visual/real-time content, a reel may fit better — but every formula here also works as a reel script outline.
