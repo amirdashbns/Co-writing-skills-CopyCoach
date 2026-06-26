@@ -30,12 +30,13 @@ This writing system has three core components:
 │  │   PROFILES   │  │              │  │    BASE      │       │
 │  ├──────────────┤  ├──────────────┤  ├──────────────┤       │
 │  │ voice-dna    │  │ linkedin-post│  │ drafts/      │       │
-│  │ icp          │  │ twitter-     │  │ notes/       │       │
-│  │ business-    │  │   thread     │  │ archive/     │       │
-│  │   profile    │  │ substack-note│  │ research/    │       │
-│  │ market-      │  │ reddit-      │  │              │       │
-│  │  intelligence│  │  market-scan │  │              │       │
-│  │              │  │ + 8 more     │  │              │       │
+│  │ icp          │  │ instagram-   │  │ notes/       │       │
+│  │ business-    │  │   carousel   │  │ archive/     │       │
+│  │   profile    │  │ twitter-     │  │ research/    │       │
+│  │ market-      │  │   thread     │  │ frameworks/  │       │
+│  │  intelligence│  │ reddit-      │  │              │       │
+│  │ core-lessons │  │  market-scan │  │              │       │
+│  │              │  │ + 9 more     │  │              │       │
 │  └──────────────┘  └──────────────┘  └──────────────┘       │
 │        WHO              HOW              WHAT                │
 │     I am/serve      to create        to reference           │
@@ -70,6 +71,12 @@ Located in `/context/`, these JSON files define WHO I am and WHO I serve:
 **When to read**: When creating audience-facing content, choosing topics, or referencing market realities
 **How to generate**: Run the reddit-market-scanner skill
 
+### core-lessons.json
+**Purpose**: Captures my unique POVs — the counter-industry-norm ideas that position me as unique and bust the myths keeping prospects from buying
+**Contains**: Core lessons, each with the industry norm it counters, the "aha"/mindset shift, the audience belief it shifts, the offer it ladders to, and voice-matched one-liners
+**When to read**: When creating paradigm-shift content (anchor the piece on ONE core lesson). Skip for pure plug-and-play/behind-the-scenes content.
+**How to generate**: Run the core-lessons-creator skill
+
 ---
 
 ## Skills
@@ -99,6 +106,7 @@ Located in `/.claude/skills/`, these are packaged expertise for specific content
 | **voice-dna-creator** | "create voice profile", "analyze my writing" | JSON voice profile |
 | **icp-creator** | "create ICP", "define audience" | JSON ICP profile |
 | **business-profile-creator** | "create business profile" | JSON business profile |
+| **core-lessons-creator** | "core lessons", "content angles", "my unique POV", "paradigm shifts" | JSON core lessons profile |
 | **reddit-market-scanner** | "scan reddit", "market research", "what does my audience think" | Market intelligence report + JSON |
 
 ### Skill Selection Rules
@@ -134,6 +142,7 @@ STEP 1: LOAD CONTEXT
 □ Read /context/voice-dna.json
 □ Read /context/icp.json (if audience-facing)
 □ Read /context/business-profile.json (if referencing offerings)
+□ Read /context/core-lessons.json (if paradigm-shift content — anchor on one lesson)
 
 STEP 2: CHECK FOR SKILL
 ─────────────────────
@@ -151,6 +160,7 @@ STEP 4: WRITE
 □ Follow skill framework (if applicable)
 □ Match voice DNA exactly
 □ Target ICP specifically
+□ Anchor on a core lesson (if paradigm-shift content)
 □ Include appropriate CTA
 ```
 

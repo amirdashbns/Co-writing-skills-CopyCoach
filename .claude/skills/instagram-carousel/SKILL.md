@@ -18,7 +18,7 @@ This skill reads from a shared framework library at `/knowledge/frameworks/insta
 - `plug-and-play-ctas.md` — CTA library
 - `power-word-bank.md` — power words/phrases by emotion
 
-And the context profiles in `/context/`. If you ever relocate this skill, move or re-point the framework library with it.
+And the context profiles in `/context/` (including `core-lessons.json` — the user's unique POVs). If you ever relocate this skill, move or re-point the framework library with it.
 
 ## THE #1 RULE: Voice Override
 
@@ -33,6 +33,7 @@ Before finalizing, check the user's `never_say` list and tone profile. If a powe
    - `/context/icp.json` — write for the target audience, use their language
    - `/context/business-profile.json` — reference offers and CTAs accurately
    - `/context/market-intelligence.json` — ground pain points and language in real data (if present)
+   - `/context/core-lessons.json` — the user's unique POVs / paradigm shifts (if present); anchor paradigm-shift posts on one of these
 2. **Check `/knowledge/` for source material** if repurposing an existing piece (article, newsletter, transcript).
 
 ## Workflow
@@ -40,13 +41,17 @@ Before finalizing, check the user's `never_say` list and tone profile. If a powe
 ### Phase 1 — Pick the bucket + sub-bucket
 Read `content-buckets.md`. Based on the user's topic and goal, recommend the best-fit **bucket** (Educate / Relate / Inspire / Sell) and **sub-bucket** (e.g. Problem Awareness, Case Study, Self-Selection). Explain why in one line, and confirm with the user (or proceed with the obvious choice if the topic makes it clear). Default mix skews Educate/Relate unless the user is actively selling/launching.
 
-### Phase 2 — Lock the idea
+### Phase 2 — Lock the idea (and anchor on a core lesson when relevant)
 A carousel is only as good as its idea. Use the matching prompts in `brainstorm-questions.md` to pin down **one specific audience problem** the carousel solves, meeting the audience at their:
 - day-to-day struggle (from `icp.json`)
 - experience level (don't teach advanced theory to beginners)
 - knowledge of the user's offers (don't assume they know the offer — give context)
 
-Confirm the single, specific topic before writing. Get specific: not "everything about X" but one focused slice (e.g. not "how to use every gym machine" but "how to set up a barbell for hip thrusts").
+**Anchor on a core lesson WHEN RELEVANT.** If the post is a paradigm-shift type — Problem Awareness, Turning Point, Value Share, Self-Selection, or FAObjection — pick ONE lesson from `/context/core-lessons.json` to be the post's central "aha." This is what makes the content unmistakably the user's POV, not generic advice. Use the lesson's `the_aha` and `deeper_truth` as the spine, its `one_liners` as hook material, and `audience_belief_it_shifts` to frame the problem. Teach the "what" and "why" of the lesson; let the CTA point to the "how" (the offer).
+
+**Skip the core lesson** for pure plug-and-play lists, behind-the-scenes, or engagement-invitation posts — not everything is a paradigm shift, and forcing one makes it feel preachy. Use judgment.
+
+Confirm the single, specific topic (and the core lesson, if used) before writing. Get specific: not "everything about X" but one focused slice (e.g. not "how to use every gym machine" but "how to set up a barbell for hip thrusts").
 
 ### Phase 3 — Write Slide 1 (clickable post title)
 Use `post-title-formulas.md` (start with the chosen bucket's section, but borrow freely). Rules:
@@ -77,7 +82,7 @@ Use `caption-templates.md` (match the same bucket; pick by the "to use when" pur
 ## Output Format
 
 Deliver:
-1. **Bucket + sub-bucket + formula used** (one line, with why)
+1. **Bucket + sub-bucket + formula used** (one line, with why) — and the **core lesson** anchoring the post, if one was used
 2. **The carousel** — each slide numbered, labeled by purpose, with the copy
 3. **2-3 alternative Slide 1 titles**
 4. **The caption** (with hook + CTA)
@@ -88,6 +93,7 @@ Deliver:
 
 Before delivering, verify:
 - [ ] **Voice:** sounds unmistakably like `voice-dna.json`; no `never_say` words; not the framework's voice
+- [ ] **POV:** if it's a paradigm-shift post, it's anchored on a core lesson (the "aha" is the user's, not generic)
 - [ ] **Value:** solves one specific problem for the ICP at their experience level
 - [ ] **Momentum:** Slide 1 grabs attention; first 3 slides pull the reader in; every slide earns the next swipe
 - [ ] **Readability:** headings/subheadings/body hierarchy; short lines; no walls of text
