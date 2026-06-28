@@ -97,6 +97,7 @@ Read `canva-template-setup.md` for the full field map. The **carousel copy (step
 - `CTA_Steps` = both numbered instructions in one cell (line break between them).
 - Leave unused `Body{N}_*` columns empty.
 - **Map, don't trim:** carry full carousel wording; split across paragraphs/slides, not fields.
+- **Never leave `Body{N}_P2` empty** for a slide in use — Canva drops empty columns and the field won't appear. Use real second-paragraph copy or a single space ` ` if only one paragraph.
 - No commas inside field values (breaks CSV paste) — rephrase punctuation only if needed for CSV format.
 - Wrap the table in a `csv` code block using the exact 32-column order from `canva-template-setup.md`.
 

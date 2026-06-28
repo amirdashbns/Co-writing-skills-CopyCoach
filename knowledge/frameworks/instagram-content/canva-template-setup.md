@@ -55,10 +55,21 @@ Default bias: **more words, more slides** — not tighter fields.
 |-------|---------|
 | `Body{N}_Heading` | Slide heading |
 | `Body{N}_P1` | First body paragraph (can be multiple sentences) |
-| `Body{N}_P2` | Second paragraph — optional, leave blank if one block is enough |
+| `Body{N}_P2` | Second paragraph block (para 2+3 merged from template) |
 | `Body{N}_PerfectIf` | Yellow callout text **after** "Perfect if:" (label stays in template) |
 
 **Mapping:** heading → `Heading`; main copy → `P1`; extra paragraph → `P2`; audience qualifier → `PerfectIf`. Do **not** split every sentence into its own field.
+
+### ⚠️ Canva drops empty columns
+
+**Bulk Create will NOT show a column if the data cell is empty** — no `Body1_P2` in the field list, nothing to connect, nothing populates.
+
+**Rules:**
+- If a body slide is **in use**, every connected field (`P1`, `P2`, `PerfectIf`) needs **some text** in the spreadsheet row.
+- If you only have one paragraph: put it all in `P1` and put a **single space** ` ` in `P2` (keeps the column visible; renders nearly invisible). Or merge into one box and don't connect `P2`.
+- Unused body slides (6–7): leave empty and **delete those slides** after generate — or fill with `—` placeholders if you need the columns to appear during setup.
+
+**Test file with all P2 filled:** `sample-canva-strategy-test.xlsx` (matches the 7-step template).
 
 ### Slide 9 — Takeaway
 
