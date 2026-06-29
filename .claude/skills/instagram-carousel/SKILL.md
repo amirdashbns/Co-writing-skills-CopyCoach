@@ -84,24 +84,23 @@ Read `canva-template-setup.md` for the full field map. The **carousel copy (step
 
 **Words over design:** If an idea needs room, split it across `P1` + `P2`, or use another body slide (`Body6`, `Body7`). Prefer more slides over cramped fields. The template should be sized for the writing (see word-first template guide in `canva-template-setup.md`) — copy is never the thing that yields.
 
-**Template layout:** 1 title + up to 7 body slides + 1 takeaway + 1 CTA. **32 fields total** — see `canva-template-setup.md`. Map as follows:
-- Carousel Slide 1 → `Title` (one field — full title, do not split for pink accents)
-- Carousel body slides → `Body1_` through `Body7_` (`Heading`, `P1`, `P2`, `PerfectIf` per slide)
-- Penultimate slide (takeaway) → `Takeaway` (one field — full statement)
-- Final slide (CTA) → `CTA_Question` + `CTA_Steps` (instructions combined in `CTA_Steps`)
+**Template layout:** 1 title + up to 7 body slides + 1 takeaway + 1 CTA. **25 fields total** — see `canva-template-setup.md`. Map as follows:
+- Carousel Slide 1 → `Title` (one field — full title)
+- Carousel body slides → `Body1_` through `Body7_` (`Heading`, `P1`, `P2` per slide — no `PerfectIf`)
+- Penultimate slide (takeaway) → `Takeaway` (one field)
+- Final slide (CTA) → `CTA_Question` + `CTA_Steps`
 
 **Field mapping rules:**
-- **Fewer fields, not fewer words:** never split copy per sentence or per line to match design accents. Paragraph-level splits only (`P1` / `P2`).
-- Map each body slide: heading → `Body{N}_Heading`; first paragraph block → `Body{N}_P1`; second paragraph → `Body{N}_P2` (blank if unused); qualifier → `Body{N}_PerfectIf`.
-- `Takeaway` = entire takeaway slide copy in one cell (line breaks OK).
-- `CTA_Steps` = both numbered instructions in one cell (line break between them).
-- Leave unused `Body{N}_*` columns empty.
-- **Map, don't trim:** carry full carousel wording; split across paragraphs/slides, not fields.
-- **Never leave `Body{N}_P2` empty** for a slide in use — Canva drops empty columns and the field won't appear. Use real second-paragraph copy or a single space ` ` if only one paragraph.
-- No commas inside field values (breaks CSV paste) — rephrase punctuation only if needed for CSV format.
-- Wrap the table in a `csv` code block using the exact 32-column order from `canva-template-setup.md`.
+- **Fewer fields, not fewer words:** paragraph-level splits only (`P1` / `P2`). Never split per sentence or per line.
+- Map each body slide: heading → `Body{N}_Heading`; first paragraph block → `Body{N}_P1`; second paragraph → `Body{N}_P2`.
+- Audience qualifiers / "perfect for" lines → fold into `P2` or `P1`, not a separate field.
+- `Takeaway` = entire takeaway copy in one cell (line breaks OK).
+- `CTA_Steps` = both instructions in one cell (line break between them).
+- **Never leave `Body{N}_P2` empty** for a slide in use — Canva drops empty columns. Use real copy or a single space ` `.
+- No commas inside field values (breaks CSV paste).
+- Wrap the table in a `csv` code block using the exact 25-column order from `canva-template-setup.md`.
 
-**After the table, include a one-line reminder:** Open Canva template → Apps → Bulk Create → paste table → Generate → delete unused body slides → export.
+**After the table, include a one-line reminder:** Update Google Sheet row 2 (or upload XLSX) → Bulk Create → Google Sheets → Generate.
 
 ## Output Format
 
@@ -110,7 +109,7 @@ Deliver:
 2. **The carousel** — each slide numbered, labeled by purpose, with the copy
 3. **2-3 alternative Slide 1 titles**
 4. **The caption** (with hook + CTA)
-5. **Canva Bulk Create table** — single-row CSV with all 32 fields (see `canva-template-setup.md`)
+5. **Canva Bulk Create table** — single-row CSV with all 25 fields (see `canva-template-setup.md`)
 6. **Hashtags** (3-5)
 
 ## Quality Checklist
