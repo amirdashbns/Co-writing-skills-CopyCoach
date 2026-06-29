@@ -1,12 +1,10 @@
 # Canva Carousel Template — Setup & Field Map
 
-Reference for the **cream theme** 10-slide Instagram carousel template used with Canva Bulk Create.
+Reference for the **cream theme** 10-slide Instagram carousel template used with Canva Bulk Create + **Canva Sheets**.
 
 ## Philosophy: words over design
 
-**Copy is the product. Design is the container.**
-
-The carousel skill writes the full message first. The Canva table is an *export layer*. Never shorten copy to fit a text box.
+Copy is the product. The Canva Sheet row is an export layer. Never shorten copy to fit a text box.
 
 ## Field map — 25 fields
 
@@ -17,81 +15,77 @@ The carousel skill writes the full message first. The Canva table is an *export 
 | Takeaway | `Takeaway` |
 | CTA | `CTA_Question`, `CTA_Steps` |
 
-**No `PerfectIf` fields** — delete the yellow boxes from the template (or leave static/empty). Audience qualifiers go in `P2` or an extra sentence in `P1`.
+No `PerfectIf` — delete yellow boxes from template (or leave static).
 
-## Template structure (10 slides)
+## Two stages
 
-| Slide # | Role | Connect |
-|--------:|------|---------|
-| 1 | Title | `Title` |
-| 2–8 | Body | `Body{N}_Heading`, `Body{N}_P1`, `Body{N}_P2` |
-| 9 | Takeaway | `Takeaway` |
-| 10 | CTA | `CTA_Question`, `CTA_Steps` |
+| Stage | What | Text matters? |
+|-------|------|----------------|
+| **1. Setup (once)** | Row 1 = headers. Connect template boxes to fields. | Row 2 can be `test` / lorem ipsum — only headers + connections matter |
+| **2. Produce (each carousel)** | Paste new copy into row 2 → Generate | Yes — this is the real copy |
 
-## Field names (must match exactly)
-
-### Slide 1 — `Title`
-One text box. Pink pill = static design element.
-
-### Body slides — `Body1_` through `Body7_`
-| Field | Purpose |
-|-------|---------|
-| `Body{N}_Heading` | Slide heading |
-| `Body{N}_P1` | First paragraph block |
-| `Body{N}_P2` | Second paragraph block (merge para 2+3 from template here) |
-
-### Slide 9 — `Takeaway`
-One text box. Full statement.
-
-### Slide 10 — `CTA_Question`, `CTA_Steps`
-Question box + combined instructions box.
-
-## ⚠️ Canva drops empty columns
-
-Every column you connect needs **some text** in the data row (use a single space ` ` if unused).
-
-## Faster repeat workflow (skip re-upload pain)
-
-**Problem:** Field connections stay on the template (purple tags), but Bulk Create still asks for a data source each time — the left pane is empty until you load data.
-
-**Fix: Google Sheet as your permanent data hub** (one-time setup, ~5 min):
-
-1. Create a Google Sheet named `Carousel Data`
-2. Row 1 = the 25 column headers (copy from `carousel-data-headers-only.csv`)
-3. Row 2 = your carousel copy (paste from agent each time)
-4. In Canva Bulk Create → **Google Sheets** app (not Upload) → connect your sheet
-5. Field connections on the **template** are already saved → **Continue → Generate**
-
-**Each new carousel:** update row 2 in Google Sheets → open template → Bulk Create → Google Sheets → pick sheet → Generate. No reconnecting. No rebuilding columns.
-
-**Alternative:** Keep a **Canva Sheet** in your project with the same header row — paste row 2, select range, Actions → Bulk Create designs.
-
-Upload CSV/XLSX still works for first-time setup or one-offs.
-
-## Bulk Create workflow
+## Column order (left → right, 25 columns)
 
 ```
-1. Agent outputs CSV row (25 columns)
-2. Paste into Google Sheet row 2  (or upload XLSX once)
-3. Open template → Bulk Create → Google Sheets → select sheet
-4. Continue → Generate (connections already on template)
-5. Delete unused body slides → export PNGs
+Title
+Body1_Heading, Body1_P1, Body1_P2
+Body2_Heading, Body2_P1, Body2_P2
+Body3_Heading, Body3_P1, Body3_P2
+Body4_Heading, Body4_P1, Body4_P2
+Body5_Heading, Body5_P1, Body5_P2
+Body6_Heading, Body6_P1, Body6_P2
+Body7_Heading, Body7_P1, Body7_P2
+Takeaway
+CTA_Question
+CTA_Steps
 ```
 
-## Full column order (CSV)
+## Paste row format (no CSV files)
+
+The agent outputs **one tab-separated line** — not comma-separated text, not a file download.
+
+**Why tabs?** Pasting comma-separated text into a sheet puts everything in **one cell**. Tabs split into columns automatically.
+
+**Each new carousel:**
+1. Open **Carousel Data** Canva Sheet
+2. Click cell **A2**
+3. Paste the agent's tab-separated line
+4. Open template → **Bulk Create** → **Sheets** → pick Carousel Data → **Generate**
+
+**TSV rules:**
+- One line, 25 fields, separated by **tab** characters
+- No tabs or newlines inside a field value
+- CTA steps: join with ` / ` (e.g. `1) SAVE FOR LATER / 2) COMMENT 'VOICE' FOR FREE GUIDE`)
+- Unused body slides: space ` ` in each of that slide's three fields
+- Single-paragraph slide: copy in `P1`, space ` ` in `P2`
+
+## One-time setup
+
+### Row 1 headers (paste into A1 once)
+
+Tab-separated header line — copy from `carousel-data-headers.tsv` or paste:
 
 ```
-Title,Body1_Heading,Body1_P1,Body1_P2,Body2_Heading,Body2_P1,Body2_P2,Body3_Heading,Body3_P1,Body3_P2,Body4_Heading,Body4_P1,Body4_P2,Body5_Heading,Body5_P1,Body5_P2,Body6_Heading,Body6_P1,Body6_P2,Body7_Heading,Body7_P1,Body7_P2,Takeaway,CTA_Question,CTA_Steps
+Title	Body1_Heading	Body1_P1	Body1_P2	Body2_Heading	Body2_P1	Body2_P2	Body3_Heading	Body3_P1	Body3_P2	Body4_Heading	Body4_P1	Body4_P2	Body5_Heading	Body5_P1	Body5_P2	Body6_Heading	Body6_P1	Body6_P2	Body7_Heading	Body7_P1	Body7_P2	Takeaway	CTA_Question	CTA_Steps
 ```
 
-**Test files:** `sample-canva-strategy-test.xlsx` | `sample-canva-bulk-create.xlsx` | `carousel-data-headers-only.csv`
+### Row 2 placeholder (setup only)
+
+Paste `test` tab `test` tab … across 25 cells, connect template fields, save.
+
+## Canva drops empty columns
+
+Every connected column needs a value in row 2 (use ` ` if unused).
+
+## Workflow summary
+
+```
+SETUP (once):  Headers in row 1 → connect template → save
+EACH CAROUSEL: Agent paste row → A2 → Bulk Create → Sheets → Generate → export
+```
 
 ## Template tweaks
 
-- Delete yellow PerfectIf boxes from body slides
-- Merge title / takeaway / CTA text as documented above
-- Size boxes for word-first copy (taller P1/P2 areas)
-
-## Future: Autofill API (Enterprise)
-
-Same 25 field names map 1:1 to autofill keys if you upgrade later.
+- Delete yellow PerfectIf boxes
+- Merge title / takeaway / CTA into single boxes per field map
+- Size P1/P2 boxes for word-first copy
