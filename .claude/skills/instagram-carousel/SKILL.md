@@ -79,43 +79,28 @@ Use `caption-templates.md` (match the same bucket; pick by the "to use when" pur
 ### Phase 7 — Add hashtags
 - **Hashtags:** suggest 3-5, mixing popular + niche-specific based on the topic.
 
-### Phase 8 — Emit Canva Sheet data
-Read `canva-template-setup.md` for the field map, column order, and paste workflows. The **carousel copy (steps 1–6) is the source of truth**. Phase 8 maps that copy into fields — it does not rewrite or shorten it.
+### Phase 8 — Emit Canva Bulk Create data table
+Read `canva-template-setup.md` for the full field map. The **carousel copy (steps 1–6) is the source of truth** — write it fully, with no regard for text-box size. Phase 8 *maps* that copy into Canva fields; it does not rewrite or shorten it.
 
-**Words over design:** Split across `P1` + `P2`, or add body slides — never cram or cut copy.
+**Words over design:** If an idea needs room, split it across `P1` + `P2`, or use another body slide (`Body6`, `Body7`). Prefer more slides over cramped fields. The template should be sized for the writing (see word-first template guide in `canva-template-setup.md`) — copy is never the thing that yields.
 
-**25 fields** (no `PerfectIf`): `Title` → `Body1_Heading` … `Body7_P2` → `Takeaway` → `CTA_Question` → `CTA_Steps`. See `canva-template-setup.md` for mapping rules.
+**Template layout:** 1 title + up to 7 body slides + 1 takeaway + 1 CTA. **25 fields total** — see `canva-template-setup.md`. Map as follows:
+- Carousel Slide 1 → `Title` (one field — full title)
+- Carousel body slides → `Body1_` through `Body7_` (`Heading`, `P1`, `P2` per slide — no `PerfectIf`)
+- Penultimate slide (takeaway) → `Takeaway` (one field)
+- Final slide (CTA) → `CTA_Question` + `CTA_Steps`
 
-**Canva Sheets does NOT split tab paste.** A tab-separated line pasted into A2 lands entirely in one cell. Do not tell the user to paste TSV directly into Canva Sheets.
+**Field mapping rules:**
+- **Fewer fields, not fewer words:** paragraph-level splits only (`P1` / `P2`). Never split per sentence or per line.
+- Map each body slide: heading → `Body{N}_Heading`; first paragraph block → `Body{N}_P1`; second paragraph → `Body{N}_P2`.
+- Audience qualifiers / "perfect for" lines → fold into `P2` or `P1`, not a separate field.
+- `Takeaway` = entire takeaway copy in one cell (line breaks OK).
+- `CTA_Steps` = both instructions in one cell (line break between them).
+- **Never leave `Body{N}_P2` empty** for a slide in use — Canva drops empty columns. Use real copy or a single space ` `.
+- No commas inside field values (breaks CSV paste).
+- Wrap the table in a `csv` code block using the exact 25-column order from `canva-template-setup.md`.
 
-**Field value rules (critical):**
-- **No tab characters inside field values.** No newlines inside field values. Use ` / ` to join CTA steps; use spaces in `Takeaway` instead of line breaks.
-- Unused body slides (6–7): single space ` ` in each of that slide's three fields.
-- If only one paragraph on a slide: all copy in `P1`, single space ` ` in `P2`.
-- Never leave `P2` empty for a slide in use — Canva drops empty columns.
-
-**Deliver all three of the following:**
-
-#### 1. Labeled field blocks (always — foolproof)
-One section per field, in exact column order (A→Y). Each section: field name, target cell, and a fenced copy block with **only** that field's value. Example:
-
-```
-### Title → A2
-(paste into cell A2)
-```
-
-User pastes each value into the matching row-2 cell under the header.
-
-#### 2. Row files (when writing to disk is possible)
-Save to `knowledge/drafts/{topic-slug}-canva-row.tsv` and `{topic-slug}-canva-row.xlsx` (2 rows: headers + data). Use `scripts/build-canva-carousel-row.py` or write equivalent files. Tell the user:
-
-- **Fastest in Canva:** Actions → Import data → upload the `.xlsx`
-- **Google Sheets bridge:** open the `.tsv` in a text editor (tabs preserved), paste into Google Sheets A2, copy A2:Y2, paste into Canva Sheet A2
-
-#### 3. Workflow reminder (one line)
-Canva data loaded → open template → Bulk Create → Sheets → Carousel Data → Generate.
-
-**Do not** output a single tab-separated code block as the primary paste method. Markdown code blocks strip tabs when copied from chat.
+**After the table, include a one-line reminder:** Save CSV → open in Sheets/Excel → copy data row → paste **values only** into Canva Sheet row 2 → Bulk Create → Sheets → Generate.
 
 ## Output Format
 
@@ -124,7 +109,7 @@ Deliver:
 2. **The carousel** — each slide numbered, labeled by purpose, with the copy
 3. **2-3 alternative Slide 1 titles**
 4. **The caption** (with hook + CTA)
-5. **Canva Sheet data** — labeled field blocks + row files (see `canva-template-setup.md`)
+5. **Canva Bulk Create table** — single-row CSV with all 25 fields (see `canva-template-setup.md`)
 6. **Hashtags** (3-5)
 
 ## Quality Checklist
@@ -139,7 +124,7 @@ Before delivering, verify:
 - [ ] **Caption:** does NOT repeat the slides; has a hook and a clear CTA
 - [ ] **CTA:** specific, with a natural lead-in; offer context given if referenced
 - [ ] ≤ 10 slides
-- [ ] **Canva data:** 25 labeled field blocks in column order; row TSV+XLSX saved when possible; no tabs/newlines inside values; no empty `P2` on slides in use
+- [ ] **Canva table:** all 25 columns present; field names match `canva-template-setup.md`; full copy mapped at paragraph level (not per-sentence); no empty `P2` on slides in use
 
 ## Notes
 - Carousels suit Educate/Relate/Inspire/Sell content built around words. For highly visual/real-time content, a reel may fit better — but every formula here also works as a reel script outline.
