@@ -100,7 +100,7 @@ Read `canva-template-setup.md` for the full field map. The **carousel copy (step
 - No commas inside field values (breaks CSV paste).
 - Wrap the table in a `csv` code block using the exact 25-column order from `canva-template-setup.md`.
 
-**After the table, include a one-line reminder:** Update Google Sheet row 2 (or upload XLSX) → Bulk Create → Google Sheets → Generate.
+**After the table, include a one-line reminder:** Save CSV → open in Sheets/Excel → copy data row → paste **values only** into Canva Sheet row 2 → Bulk Create → Sheets → Generate.
 
 ## Output Format
 
@@ -124,7 +124,7 @@ Before delivering, verify:
 - [ ] **Caption:** does NOT repeat the slides; has a hook and a clear CTA
 - [ ] **CTA:** specific, with a natural lead-in; offer context given if referenced
 - [ ] ≤ 10 slides
-- [ ] **Canva table:** all 32 columns present; field names match `canva-template-setup.md`; full copy mapped at paragraph level (not per-sentence); unused body slots blank
+- [ ] **Canva table:** all 25 columns present; field names match `canva-template-setup.md`; full copy mapped at paragraph level (not per-sentence); no empty `P2` on slides in use
 
 ## Notes
 - Carousels suit Educate/Relate/Inspire/Sell content built around words. For highly visual/real-time content, a reel may fit better — but every formula here also works as a reel script outline.

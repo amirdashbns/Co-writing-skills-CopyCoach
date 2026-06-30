@@ -50,32 +50,35 @@ Question box + combined instructions box.
 
 Every column you connect needs **some text** in the data row (use a single space ` ` if unused).
 
-## Faster repeat workflow (skip re-upload pain)
+## Repeat workflow — CSV copy/paste (simplest)
 
-**Problem:** Field connections stay on the template (purple tags), but Bulk Create still asks for a data source each time — the left pane is empty until you load data.
+Field connections stay on the template (purple tags), but you reload data each generate. The fastest reliable path:
 
-**Fix: Google Sheet as your permanent data hub** (one-time setup, ~5 min):
+1. Agent outputs a **2-row CSV** (row 1 = headers, row 2 = copy) in a `csv` code block
+2. Save as `.csv` → open in Google Sheets or Excel
+3. Select **row 2 only** (the data row) → copy
+4. Open your **Carousel Data** Canva Sheet → click **A2** → paste **values only**
+5. Template → **Bulk Create** → **Sheets** → pick Carousel Data → **Generate** → export PNGs
 
-1. Create a Google Sheet named `Carousel Data`
-2. Row 1 = the 25 column headers (copy from `carousel-data-headers-only.csv`)
-3. Row 2 = your carousel copy (paste from agent each time)
-4. In Canva Bulk Create → **Google Sheets** app (not Upload) → connect your sheet
-5. Field connections on the **template** are already saved → **Continue → Generate**
+Pasting directly from chat into Canva Sheets does not split columns. The extra 10 seconds to open the CSV file is what makes paste work.
 
-**Each new carousel:** update row 2 in Google Sheets → open template → Bulk Create → Google Sheets → pick sheet → Generate. No reconnecting. No rebuilding columns.
+### One-time setup
 
-**Alternative:** Keep a **Canva Sheet** in your project with the same header row — paste row 2, select range, Actions → Bulk Create designs.
+1. Create a Canva Sheet named `Carousel Data`
+2. Row 1 = the 25 column headers (from `carousel-data-headers-only.csv`)
+3. Connect template fields once → save template
 
-Upload CSV/XLSX still works for first-time setup or one-offs.
+### Optional: Google Sheet as permanent hub
+
+Same headers in a Google Sheet; paste row 2 from the agent CSV each time; Bulk Create → **Google Sheets** app instead of Canva Sheets. Connections on the template still persist.
 
 ## Bulk Create workflow
 
 ```
-1. Agent outputs CSV row (25 columns)
-2. Paste into Google Sheet row 2  (or upload XLSX once)
-3. Open template → Bulk Create → Google Sheets → select sheet
-4. Continue → Generate (connections already on template)
-5. Delete unused body slides → export PNGs
+1. Agent outputs CSV (headers + data row)
+2. Save → open → copy row 2 → paste values only into Canva Sheet A2
+3. Bulk Create → Sheets → Generate
+4. Delete unused body slides → export PNGs
 ```
 
 ## Full column order (CSV)
