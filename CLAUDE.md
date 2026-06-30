@@ -95,7 +95,7 @@ Located in `/.claude/skills/`, these are packaged expertise for specific content
 | Skill | Triggers When | Output |
 |-------|--------------|--------|
 | **linkedin-post** | "LinkedIn post", "post for LinkedIn" | Single LinkedIn post with hook, body, CTA |
-| **instagram-carousel** | "Instagram carousel", "IG post", "carousel" | Carousel slides + matching caption |
+| **instagram-carousel** | "Instagram carousel", "IG post", "carousel" | Carousel slides + caption + Canva Bulk Create CSV |
 | **twitter-thread** | "Twitter thread", "thread", "tweets" | 7-15 tweet thread |
 | **substack-note** | "Substack note", "notes" | Short-form Substack content |
 | **thought-leadership** | "thought piece", "article", "essay" | Long-form content (1000-5000 words) |
