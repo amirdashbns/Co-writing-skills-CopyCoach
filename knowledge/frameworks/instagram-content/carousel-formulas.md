@@ -7,7 +7,7 @@ Slide-by-slide structures for Instagram carousels (up to 10 slides), organized b
 **The 3 pillars (apply to every formula):**
 - **Value** — actively useful for *this* audience (their specific problem, experience level, knowledge of your offers)
 - **Momentum** — every slide either leads into the next or gives enough value to keep swiping. First 3 slides matter most. Use seeds of curiosity ("here's what we mean," "let's look at an example"), direct words ("swipe," "next"), or arrows.
-- **Readability** — headings (tips/takeaways, not titles) + subheadings (one-liners) + body text (≤3 lines). Third-grade reading level. Don't say in five words what you can say in one.
+- **Readability** — headings (tips/takeaways, not titles) + body in two paragraph blocks. **For copy length on carousels, follow `carousel-copy-density.md`** — the "≤3 lines" note here is a ceiling for layout, not a target. Amir's carousels are wordy and developed, not thin listicle bullets.
 
 **The hourglass flow:** Slide 1 = most zoomed out (big picture/curiosity) → zoom in (context/new perspective) → get specific (the meat: examples, advice, details) → zoom back out (big takeaway) → connect to you (CTA).
 

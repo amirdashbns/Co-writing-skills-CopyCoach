@@ -8,6 +8,8 @@ Reference for the **cream theme** 10-slide Instagram carousel template used with
 
 The carousel skill writes the full message first. The Canva table is an *export layer*. Never shorten copy to fit a text box.
 
+**Copy density:** Body slides target **60–120 words** across `P1` + `P2`. See `carousel-copy-density.md`. Thin one-sentence fields produce empty-looking slides and don't match Amir's voice.
+
 ## Field map — 25 fields
 
 | Slide | Fields |

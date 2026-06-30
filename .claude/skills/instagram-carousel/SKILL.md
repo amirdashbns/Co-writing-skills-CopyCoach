@@ -18,6 +18,7 @@ This skill reads from a shared framework library at `/knowledge/frameworks/insta
 - `plug-and-play-ctas.md` — CTA library
 - `power-word-bank.md` — power words/phrases by emotion
 - `canva-template-setup.md` — Canva Bulk Create field names, column order, and workflow
+- `carousel-copy-density.md` — **word-count targets and density rules** (overrides terse framework defaults)
 
 And the context profiles in `/context/` (including `core-lessons.json` — the user's unique POVs). If you ever relocate this skill, move or re-point the framework library with it.
 
@@ -63,10 +64,19 @@ Use `post-title-formulas.md` (start with the chosen bucket's section, but borrow
 - Offer 2-3 title options for the user to choose from
 
 ### Phase 4 — Write Slides 2-9 (the body)
-Pick the matching formula from `carousel-formulas.md` (each is tagged "Perfect for: [sub-bucket]"). Follow its slide-by-slide structure. Apply the **3 pillars** throughout:
-- **Value** — every slide useful for *this* audience
-- **Momentum** — each slide leads to the next; first 3 slides matter most; use seeds of curiosity, direct words, or arrows. Keep slides 1-3 light (heading + short subheading), don't overwhelm up front.
-- **Readability** — headings (tips/takeaways, not titles) + subheadings (one-liners) + body (≤3 lines, ~3rd-grade reading level). Don't say in five words what you can say in one.
+Pick the matching formula from `carousel-formulas.md` (each is tagged "Perfect for: [sub-bucket]"). Follow its slide-by-slide **structure** — but for **copy length and density**, follow `carousel-copy-density.md`, not the framework's "≤3 lines" defaults.
+
+**Copy density is non-negotiable.** Amir is direct, not sparse. Body slides need **60–120 words** across `P1` + `P2` when the slide is in use. One-sentence paragraphs look empty in Canva and don't sound like him.
+
+Apply the **3 pillars** throughout:
+- **Value** — every slide useful for *this* audience; teach the thought, don't headline it
+- **Momentum** — each slide leads to the next; first 3 slides matter most. "Light" early slides = no walls of text, **not** one-liners
+- **Readability** — heading (short) + **two developed paragraph blocks** (`P1` / `P2`). Conversational reading level. **Develop ideas** — parenthetical asides, transitions, examples. Never compress a lesson into the fewest possible words.
+
+**Per body slide (in use):**
+- `Heading` — 5–12 words
+- `P1` — 2–4 sentences, **35–70 words** (setup, context, reframe)
+- `P2` — 2–3 sentences, **25–55 words** (payoff, example, aside, or qualifier)
 
 Follow the **hourglass flow**: zoomed-out big picture → zoom in (context/reframe) → get specific (the meat) → zoom back out (big takeaway) → connect to the user/offer.
 
@@ -119,7 +129,8 @@ Before delivering, verify:
 - [ ] **POV:** if it's a paradigm-shift post, it's anchored on a core lesson (the "aha" is the user's, not generic)
 - [ ] **Value:** solves one specific problem for the ICP at their experience level
 - [ ] **Momentum:** Slide 1 grabs attention; first 3 slides pull the reader in; every slide earns the next swipe
-- [ ] **Readability:** headings/subheadings/body hierarchy; short lines; no walls of text
+- [ ] **Readability:** headings + two developed `P1`/`P2` blocks per body slide; not one-sentence paragraphs
+- [ ] **Density:** body slides in use hit `carousel-copy-density.md` word targets; `P2` adds a new beat (not a restatement)
 - [ ] **Title:** clickable, under 10 words, clear topic
 - [ ] **Caption:** does NOT repeat the slides; has a hook and a clear CTA
 - [ ] **CTA:** specific, with a natural lead-in; offer context given if referenced
