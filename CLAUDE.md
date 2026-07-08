@@ -33,9 +33,10 @@ This writing system has three core components:
 │  │ icp          │  │ twitter-     │  │ notes/       │       │
 │  │ business-    │  │   thread     │  │ archive/     │       │
 │  │   profile    │  │ substack-note│  │ research/    │       │
-│  │ market-      │  │ reddit-      │  │              │       │
+│  │ market-      │  │ reddit-      │  │ research/    │       │
 │  │  intelligence│  │  market-scan │  │              │       │
-│  │              │  │ + 8 more     │  │              │       │
+│  │ core-lessons │  │ hook-angle   │  │ frameworks/  │       │
+│  │              │  │ + 8 more     │  │  hooks/      │       │
 │  └──────────────┘  └──────────────┘  └──────────────┘       │
 │        WHO              HOW              WHAT                │
 │     I am/serve      to create        to reference           │
@@ -70,7 +71,24 @@ Located in `/context/`, these JSON files define WHO I am and WHO I serve:
 **When to read**: When creating audience-facing content, choosing topics, or referencing market realities
 **How to generate**: Run the reddit-market-scanner skill
 
+### core-lessons.json
+**Purpose**: Recurring paradigm-shift POVs that fuel presell content
+**Contains**: Lessons, aha moments, beliefs to shift, one-liners, offer ladders
+**When to read**: Hook/angle generation, paradigm-shift emails, carousel educate posts
+**How to generate**: Populate manually or from your offer methodology
+
 ---
+
+## Multi-layer content pipeline
+
+```
+Layer 1: hook-angle skill     → angle brief (proof + promise + all platform hooks)
+Layer 2: format skills        → email, carousel, LinkedIn, etc. (draft from brief)
+Layer 3: edit pass            → punchy, platform-tight, voice polish
+```
+
+Always run **hook-angle** before drafting when starting from scratch. Skip Layer 1 only when user brings a locked brief or full story dump for Mode B expand.
+
 
 ## Skills
 
@@ -99,6 +117,7 @@ Located in `/.claude/skills/`, these are packaged expertise for specific content
 | **icp-creator** | "create ICP", "define audience" | JSON ICP profile |
 | **business-profile-creator** | "create business profile" | JSON business profile |
 | **reddit-market-scanner** | "scan reddit", "market research", "what does my audience think" | Market intelligence report + JSON |
+| **hook-angle** | "hook", "angle", "title ideas", "subject lines", "idea factory", Layer 1 | Full angle brief YAML (all platforms) |
 
 ### Skill Selection Rules
 
@@ -119,6 +138,7 @@ Located in `/knowledge/`, this contains reference material:
 | `notes/` | Ideas, research, outlines | Looking for inspiration or data |
 | `archive/` | Published content | Repurposing or maintaining consistency |
 | `research/` | Reddit scans, market intelligence reports | Understanding audience, finding content ideas |
+| `frameworks/hooks/` | Hook principles, idea factory, angle brief schema | Layer 1 hook generation |
 
 ---
 
